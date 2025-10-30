@@ -10,7 +10,6 @@ public class Day1Variable {
     	float marks = 78.56f;
     	boolean isPassed = true;
     	
-    	
 		System.out.println(stud_Name);
 		System.out.println(myAge);
 		System.out.println(rollNo);

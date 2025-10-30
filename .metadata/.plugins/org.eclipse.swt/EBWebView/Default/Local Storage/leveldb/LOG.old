@@ -1,3 +1,2 @@
-2025/10/28-17:56:11.991 4150 Reusing MANIFEST C:\Users\Shree\Desktop\JavaWorkspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/10/28-17:56:12.020 4150 Recovering log #3
-2025/10/28-17:56:12.031 4150 Reusing old log C:\Users\Shree\Desktop\JavaWorkspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/10/30-21:53:18.596 46cc Creating DB C:\Users\Shree\Desktop\JavaWorkspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/10/30-21:53:18.639 46cc Reusing MANIFEST C:\Users\Shree\Desktop\JavaWorkspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
