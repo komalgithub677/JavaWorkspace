@@ -61,6 +61,10 @@ public class AssignmentOperatorDay6 {
 				 int a9 = 5;
 				 a9 = a9++ + ++a9 * a9++;
 				 System.out.println(a9);
+				 
+				 
+				 
+				 
 
 				 
 				 
