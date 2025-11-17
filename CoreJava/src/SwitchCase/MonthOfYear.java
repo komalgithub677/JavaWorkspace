@@ -42,7 +42,8 @@ public class MonthOfYear {
         	case "December":
         		System.out.println("Month is December");
         	break;
-        	
+        	default:
+        		System.out.println("Enter month not found");
         	}
 		}
 }
