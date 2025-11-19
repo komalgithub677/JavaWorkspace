@@ -1,4 +1,4 @@
-package ControlFlow;
+
 
 public class CheckingInternetSpeedCategory {
        public static void main(String[] args) {

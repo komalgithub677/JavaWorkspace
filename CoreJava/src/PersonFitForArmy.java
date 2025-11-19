@@ -1,4 +1,3 @@
-package ControlFlow;
 
 public class PersonFitForArmy {
              public static void main(String[] args) {

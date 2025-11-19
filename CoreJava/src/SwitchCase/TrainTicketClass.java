@@ -24,8 +24,7 @@ public class TrainTicketClass {
 				break;
 				
 				default:
-					System.out.println("Class entered would not be valid");
-					
+					System.out.println("Class entered would not be valid");	
 				}
 				
 				
