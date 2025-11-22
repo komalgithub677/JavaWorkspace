@@ -68,17 +68,70 @@ public class IfElsePractice {
             		 System.out.println("It is not an perfect square");
             	 }
 //Accept time in 24-hour format and print:
+            	 int time = 12;
+            	 
+            	 if(time>=0 && time<=11) {
+            		 System.out.println("Good Morning");
+            	 }
+            	 else if(time>=12 && time<=16 ) {
+            		 System.out.println("Good Afternoon");
+            	 }
+            	 else if(time>=17 && time<=20) {
+            		 System.out.println("Good Evening");
+            	 }
+            	 else if(time>=21 && time<=23) {
+            		 System.out.println("Good Night");
+            	 }
+            	 else {
+            		 System.out.println("Another time");
+            	 }
             	 
 //0–11 → Good Morning
 //12–16 → Good Afternoon
 //17–20 → Good Evening
 //21–23 → Good Night
 //Accept two numbers and print which number is nearest to 100.
+            	 int a4 =30;
+            	 int a5 =40;
+            	 
+            	 int diff1 = Math.abs(100-a4);
+            	 int diff2 = Math.abs(100-a5);
+            	 
+            	 if(diff1<diff2) {
+            		 System.out.println("a4 is nearest to the 100");
+            	 }
+            	 else {
+            		 System.out.println("a5 is nearest to the 100");
+            	 }
+            	 
+            	 
 //Accept the cost price and selling price; print Profit, Loss, or No Profit No Loss.
+            	 int costPrice = 1000;
+            	 int sellingPrice = 500;
+            	 if(sellingPrice>costPrice) {
+            		 System.out.println("Profit");
+            	 }
+            	 else if(sellingPrice<costPrice) {
+            		 System.out.println("Loss");
+            	 }
+            	 else {
+            		 System.out.println("No Profit No Loss");
+            	 }
 //Accept age and gender:
 //If age > 60 and gender = 'F' → “Senior Woman Citizen”
 //If age > 60 and gender = 'M' → “Senior Man Citizen”
 //Else → “Not a Senior Citizen”
+            	 int age= 67;
+            	 char gender ='F';
+            	 if(age>60 && gender=='F') {
+            		 System.out.println("Senior Woman Citizen");
+            	 }
+            	 else if(age>60 && gender=='M') {
+            		 System.out.println("Senior Man Citizen");
+            	 }
+            	 else {
+            		 System.out.println("Not a senior Citizen");
+            	 }
 //Accept a month number (1–12) and check if it belongs to summer, rainy, or winter season.
 				 
 				
