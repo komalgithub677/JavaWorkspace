@@ -55,14 +55,34 @@ public class OperatorPractice1 {
 				
 //				Combine three variables:
 //					int a=2,b=3,c=4; int r = a++ + --b + c++ + ++a + b--;
+				int a4 =2 , b4 = 3 , c4 =4 ;
+				int r = a4++ + --b4 + c4++ + ++a4 + b4--;
+				System.out.println(r);
+				System.out.println(a4);
+				System.out.println(b4);
+				System.out.println(c4);
 //
 //					int a=4; int b = a++ + ++a + a++ + a++;
+				int a5 = 4;
+				int b5 = a5++ + ++a5 + a5++ + a5++;
+				System.out.println(b5);
+				System.out.println(a5);
 //
 //					int a=10; int b = ++a - a++ + a-- - --a;
+				int a6 =4;
+				int b6 =a6++ + ++a6 + a6++ + a6++;
+				System.out.println(b6);
+				System.out.println(a6);
 //
 //					int x=6; x = x++ + x-- + x++ + x-- + ++x;
+				int x3 =6;
+				x3 = x3++ + x3-- + x3++ + x3-- + ++x3;
+				System.out.println(x3);
 //
 //					int a = 1; int b = a++ + a++ + a++ + a;
+				int a7 = 1;
+				int b7 = a7++ + a7++ + a7++ + a7;
+				System.out.println(a7);
 //
 //					int i = 4; int j = i-- - --i - i--;
 //
