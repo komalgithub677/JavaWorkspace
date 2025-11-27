@@ -1,6 +1,6 @@
 package main;
 
-import OOPS.Employee;
+import oops.Employee;
 public class MainClass {
       public static void main(String[] args) {
 		Employee emp = new Employee();

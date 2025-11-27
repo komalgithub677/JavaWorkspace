@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class Rectangle {
              //Create a class Rectangle with length & width. Create 3 objects & find area of each.

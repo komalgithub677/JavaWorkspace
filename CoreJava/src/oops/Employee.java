@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class Employee {
 	public int employee_id;

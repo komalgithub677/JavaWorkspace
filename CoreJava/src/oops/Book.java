@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class Book {
 	           String book_name;

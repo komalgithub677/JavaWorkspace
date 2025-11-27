@@ -1,13 +1,14 @@
-package OOPS;
+package oops;
 
 public class Animal {
-             String name;
-             String color;
-             int age;
-             String legs;
+             public String name;
+             public String color;
+             public int age;
+             public int  legs;
+             public String breed;
              
              public static void main(String[] args) {
-			
-				
+            	
+            	 
 			}
 }

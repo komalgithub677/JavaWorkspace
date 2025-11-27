@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class Employees {
              //Create a class CompanyEmployee with name, salary, department. Create 6 objects & print:

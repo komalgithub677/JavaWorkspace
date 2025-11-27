@@ -1,4 +1,4 @@
-package OOPS;
+package oops;
 
 public class Laptop {
        //Create a class Laptop with brand, RAM, and price & display all using a member method.
