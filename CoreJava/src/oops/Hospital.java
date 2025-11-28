@@ -7,7 +7,7 @@ public class Hospital {
 	    public int numberOfDoctors;
 	    public int numberOfbeds;
 	    public String specialisation;
-	    public String contactNumber;
+	    public long contactNumber;
 	    
        public static void main(String[] args) {
 		
