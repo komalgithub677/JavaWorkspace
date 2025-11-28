@@ -91,9 +91,5 @@ public class LibraryInfo {
         System.out.println("Openinig Time : " + openingTime5);
         System.out.println("Closing Time : " + closingTime5);
         System.out.println("No of Books : " + noOfBooks5);
-        
-		
-		
-		
 	}
 }
