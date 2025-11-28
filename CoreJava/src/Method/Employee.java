@@ -1,13 +1,13 @@
 package Method;
 
 public class Employee {
-            
-	//returnType methodName(){}
+		//returnType methodName(){}
 	 //Non-parameterised without return type
 	void m2() {
 		System.out.println("Hello world");
 	}
-	//Parameterised method with return type
+	
+	//Parameterised method without return type
 	void m1(String fName , String Lname) {
 		System.out.println("Hello world");
 		System.out.println(fName + " " + Lname);
@@ -26,5 +26,12 @@ public class Employee {
 		System.out.println("Sauare of  "+ num + "= " + (num*num));
 	}
 	
-	
+	void evenOdd(int num) {
+		if(num%2==0) {
+			System.out.println("Even Number");
+		}
+		else {
+			System.out.println("Odd Number");
+		}
+	}
 }

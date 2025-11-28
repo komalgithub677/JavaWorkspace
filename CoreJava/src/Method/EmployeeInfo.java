@@ -10,6 +10,6 @@ public class EmployeeInfo {
 		e.m1("Divya" , "Patil");
 		e.myAddition(10 ,30);
 		e.mySquare();
-		
+		e.evenOdd(10);
 	}
 }
