@@ -16,10 +16,32 @@ public class MethodPractice3 {
 	       }
 //
 //			Write a method that prints the sum of numbers from 1 to 100.
+	       public void sum() {
+	    	   int sum =0;
+	    	   for(int i=1; i<=100; i++) {
+	    		  sum +=i;
+	    	   }
+	    	   System.out.println("Sum of numbers :" + sum);
+	       }
 //
 //			Create a method that prints all even numbers between 1–50.
+	       public void even () {
+	    	   for(int i=1; i<=50; i++) {
+	    		   if(i%2==0) {
+	    			   System.out.println("Even Number :" + i);
+	    		   }
+	    		   
+	    	   }
+	       }
 //
 //			Write a method that prints factorial of 5.
+	       public void factorial() {
+	    	   int fact =1;
+	    	   for(int i=1; i<=5; i++) {
+	    		   fact *=i;
+	    	   }
+	    	   System.out.println("Factorial of number : " + fact);
+	       }
 //
 //			Create a method that prints Fibonacci series up to 10 terms.
 //
