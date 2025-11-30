@@ -75,8 +75,9 @@ public class MethodPractice3 {
 	       public void numberDivisibleBy7() {
 	    	   for(int i=1; i<=100; i++) {
 	    		   if(i%7==0) {
-	    			   System.out.println("Number is divisible by 7" + i);
+	    			   System.out.println(i);
 	    		   }
+	    		  
 	    	   }
 	       }
 //
@@ -86,4 +87,12 @@ public class MethodPractice3 {
 //			**
 //			***
 //			****
+	       public void printPattern() {
+	    	   for(int i=1; i<=5; i++) {
+	    		   for(int j=1; j<=i; j++) {
+	    			   System.out.print("*");
+	    		   }
+	    		   System.out.println();
+	    	   }
+	       }
 }
