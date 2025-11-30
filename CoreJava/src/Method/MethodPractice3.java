@@ -44,12 +44,41 @@ public class MethodPractice3 {
 	       }
 //
 //			Create a method that prints Fibonacci series up to 10 terms.
+	       public void fibonacci() {
+	    	   int a = 0;
+	    	   int b = 1;
+	    	   for(int i=1; i<=10; i++) {
+	    		   System.out.println("Fibonacci number : " + a);
+	    		   int next = a + b;
+	    		   a = b;
+	    		   b =next;
+	    		   
+	    	   }
+	       }
 //
 //			Write a method that prints table of 9 without taking input.
+	       public void tableOf9() {
+	    	   for(int i=1; i<=10; i++) {
+	    		   int mul = i*9;
+	    		   System.out.println( mul);
+	    	   }
+	       }
 //
 //			Create a method that prints your name 5 times.
+	       public void printName5() {
+	    	   for(int i=1; i<=5; i++) {
+	    		   System.out.println("Komal Narawade");
+	    	   }
+	       }
 //
 //			Write a method that prints numbers divisible by 7 from 1–100.
+	       public void numberDivisibleBy7() {
+	    	   for(int i=1; i<=100; i++) {
+	    		   if(i%7==0) {
+	    			   System.out.println("Number is divisible by 7" + i);
+	    		   }
+	    	   }
+	       }
 //
 //			Create a method that prints pattern:
 //

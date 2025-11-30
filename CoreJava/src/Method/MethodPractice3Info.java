@@ -9,6 +9,9 @@ public class MethodPractice3Info {
                  m3.sum();
                  m3.even();
                  m3.factorial();
+                 m3.fibonacci();
+                 m3.tableOf9();
+                 m3.printName5();
 			}
 }
 
