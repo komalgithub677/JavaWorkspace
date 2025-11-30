@@ -65,8 +65,26 @@ public class MethodPractice2 {
             	        }
 //
 //			Write a method that takes a string and count vowels inside it.
+            public void CountVowels(String s) {
+            	int count=0;
+            	
+            	for(int i=0; i<s.length(); i++) {
+            		char ch =Character.toLowerCase(s.charAt(i));
+            		if(ch=='a' || ch =='i' || ch=='o' || ch=='u' || ch=='e') {
+            			count++;
+            		}
+            	}
+            	System.out.println("Vowels count :" + count);
+            	
+            		
+            	
+            }
 //
 //			Create a method that accepts temperature in Celsius and prints Fahrenheit.
+             public void temp(double celcius) {
+            	 double fahrenheit = (celcius*9/5)+32;
+            	 System.out.println("Temperature in fahrenheit : " + fahrenheit);
+             }
 //
 //			Write a method that takes an amount and discount % and prints the final price.
 //
