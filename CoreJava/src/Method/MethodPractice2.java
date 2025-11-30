@@ -87,6 +87,10 @@ public class MethodPractice2 {
              }
 //
 //			Write a method that takes an amount and discount % and prints the final price.
+             public void finalPrice(int amount , int discount) {
+            	 int finalPrice = amount  -(amount*discount/100);
+            	 System.out.println("Final Price would be : " + finalPrice);
+             }
 //
-//			Create a method that receives an array and prints the maximum element.
+
 }

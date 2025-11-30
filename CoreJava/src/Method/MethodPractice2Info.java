@@ -11,6 +11,6 @@ public class MethodPractice2Info {
 		          m1.PrimeNumber(1);
 		          m1.CountVowels("Komal Narawade");
 		          m1.temp(45);
-		          
+		          m1.finalPrice(58000, 20);
 	}
 }
