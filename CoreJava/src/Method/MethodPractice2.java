@@ -34,8 +34,35 @@ public class MethodPractice2 {
             }
 //
 //			Write a method that takes a number and prints its multiplication table.
+            public void multiplication(int n) {
+            	for(int i=1; i<=10; i++) {
+            		int mul = i*n;
+            		System.out.println("Multiplication  table of N : " + (mul));
+            	}
+            }
 //
 //			Create a method that accepts a number and checks if it is prime.
+            public void PrimeNumber(int n) {
+            	        boolean isPrime = true;
+            	        
+            	        //Base case
+            	        if(n<=1) {
+            	        	isPrime=false;
+            	        }
+            	        
+            	        for(int i=2; i<n-1; i++) {
+            	        	if(n%i==0) {
+            	        		isPrime =false;
+            	        	}
+            	        	}
+            	        if(isPrime == true) {
+            	        	System.out.println("Number is a prime");
+            	        }
+            	        else {
+            	        	System.out.println("Number is not a prime");
+            	        }
+            	        
+            	        }
 //
 //			Write a method that takes a string and count vowels inside it.
 //

@@ -7,6 +7,8 @@ public class MethodPractice2Info {
 		          
 		          m1.PrintNumberEvenOdd(34);
 		          m1.average(12, 23, 14);
+		          m1.multiplication(23);
+		          m1.PrimeNumber(1);
 		          
 	}
 }
