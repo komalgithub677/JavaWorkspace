@@ -28,6 +28,10 @@ public class MethodPractice2 {
             
 //
 //			Create a method with three integers and print their average.
+            public void average(int a , int b , int c) {
+            	int average = (a + b + c)/2;
+            	System.out.println("average is : " + (average));
+            }
 //
 //			Write a method that takes a number and prints its multiplication table.
 //

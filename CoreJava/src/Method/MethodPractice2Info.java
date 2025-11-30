@@ -6,6 +6,7 @@ public class MethodPractice2Info {
 		          MethodPractice2 m1 = new MethodPractice2();
 		          
 		          m1.PrintNumberEvenOdd(34);
+		          m1.average(12, 23, 14);
 		          
 	}
 }
