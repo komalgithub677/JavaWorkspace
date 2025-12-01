@@ -50,8 +50,19 @@ public class MethodPractice4 {
 	 }
 //
 //	Check whether a character is vowel or consonant.
+	 public void VowelConsonant() {
+		         char ch = 'A';
+		         
+		         if(ch=='A' || ch =='I' || ch=='O' || ch=='U' || ch=='E') {
+		        	 System.out.println("Character is vowel");
+		         }
+		         else {
+		        	 System.out.println("Character is a consonant");
+		         }
+	 }
 //
 //	Find the largest among 3 numbers using nested if-else.
+	
 //
 //	Accept age and gender, print if eligible for job (interview-type logic).
 //
