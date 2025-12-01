@@ -10,5 +10,8 @@ public class MethodPractice6Info {
 				m6.fibonacciSequence();
 				m6.pattern();
 				m6.PrintPrime();
+				m6.CountDigit();
+				m6.sumOfDigits();
+				m6.Calculator();
 			}
 }

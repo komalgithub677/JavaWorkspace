@@ -100,7 +100,45 @@ public class MethodPractice6 {
 	}
 //
 //	Count number of digits using while loop.
-	
+	public void CountDigit() {
+		int num =2345;
+		int digitCount = 0;
+		for(int i=1; i<=num; i++) {
+			int digit = i%10;
+			digitCount++;
+		}
+		System.out.println("Count of digit would be the " + digitCount);
+	}
 //
 //	Create menu-driven calculator using switch + loops.
+	public void Calculator() {
+		char operation = '+';
+		
+		System.out.println("Enter the operation you want to perform : ");
+		switch(operation) {
+		case '+' :
+			int a = 10 ,b=20;
+			System.out.println("Addition of the two number is :" + (a+b));
+			break;
+		
+		case '-':
+			int a1 =30, a3 =30;
+			System.out.println("Substraction of the two number is : " +  (a1-a3));
+		break;
+		
+		case '*':
+			int a5 =23 , a4=12;
+			System.out.println("Multiplication of the two number is : " +(a5*a4));
+		break;
+		
+		case '/':
+			int a6 =23 ,a7=23;
+			System.out.println("Division of the two number is : " +(a6/a7));
+		break;
+		
+		default:
+			System.out.println("Invalid operation");
+			
+		}
+	}
 }
