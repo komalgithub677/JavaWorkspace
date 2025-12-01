@@ -62,13 +62,45 @@ public class MethodPractice4 {
 	 }
 //
 //	Find the largest among 3 numbers using nested if-else.
-	
+	public void largest() {
+		int a =23 , b=24,c=21;
+		if(a>b && a>c) {
+			System.out.println("a is largest");
+		}
+		else if(b>a && b>c) {
+			System.out.println("b is largest");
+		}
+		else {
+			System.out.println("c is largest");
+		}
+	}
 //
 //	Accept age and gender, print if eligible for job (interview-type logic).
+	public void jobeligibility() {
+		int age = 23;
+		String gender ="Female";
+		
+		if(age>=22 && (gender=="Male" || gender=="Female")) {
+			System.out.println("Eleigible for job interview");
+		}
+		else {
+			System.out.println("Not eligible for job interview");
+		}
+	}
 //
 //	Using if-else check whether a given year is a leap year.
+	public void year() {
+		int year = 2020;
+		if(year%4==0 && (year%400==0 && year%100!=0)) {
+			System.out.println("Yera is a leap year");
+		}
+		else {
+			System.out.println("Year is not a leap year");
+		}
+	}
 //
 //	Write a program to determine the type of triangle based on sides.
+	
 //
 //	Input salary and calculate bonus based on conditions.
 //

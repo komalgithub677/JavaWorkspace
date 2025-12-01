@@ -7,5 +7,7 @@ public class MethodPractice4Info {
 				m4.PrintGrade();
 				m4.NumberPositiveNegativeZero();
 				m4.VowelConsonant();
+				m4.largest();
+				m4.jobeligibility();
 			}
 }
