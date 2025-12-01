@@ -9,5 +9,7 @@ public class MethodPractice4Info {
 				m4.VowelConsonant();
 				m4.largest();
 				m4.jobeligibility();
+				m4.bonus();
+				m4.login();
 			}
 }

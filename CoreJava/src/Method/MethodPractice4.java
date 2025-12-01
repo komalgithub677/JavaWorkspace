@@ -103,6 +103,35 @@ public class MethodPractice4 {
 	
 //
 //	Input salary and calculate bonus based on conditions.
+	public void bonus() {
+		int salary = 30000;
+		if(salary>20000) {
+			System.out.println("Very less bonus");
+		}
+		else if(salary>=60000) {
+			System.out.println("Bonus is 20 percent");
+		}
+		else if(salary>=100000) {
+			System.out.println("Bonus is 30 percent");
+		}
+		else if(salary>=200000) {
+			System.out.println("Bonus is 40 percent");
+		}
+		else {
+			System.out.println("Very high bonus");
+		}
+	}
 //
 //	Check if entered login credentials are valid (username + password).
+	public void login() {
+		boolean username = true;
+		boolean password = true;
+		
+		if(username==true || password == true) {
+			System.out.println("Login credential aare valid");
+		}
+		else{
+			System.out.println("Login credential are not valid");
+		}
+	}
 }
