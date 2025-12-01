@@ -240,7 +240,64 @@ public class MethodPractice7 {
 //	Create an E-Commerce menu using switch:
 //
 //	Show categories, apply coupon, calculate delivery charges, track order.
-    
+    public void ecommerceMenu() {
+    	         System.out.println("Ecommerce Menu ");
+    	         System.out.println("1.Show Categories");
+    	         System.out.println("2.Apply coupon");
+    	         System.out.println("3.Calculate the delivery charges");
+    	         System.out.println("4.Track order");
+    	         System.out.println("Enter your choice");
+    	         
+    	         int choice = 1;
+    	         
+    	         switch(choice) {
+    	         case 1:
+    	        	 System.out.println("E commerce Menu");
+    	        	 System.out.println("1.Show Categories");
+    	        	 System.out.println("2.Apply Coupon");
+    	        	 System.out.println("3.Calculate the delivery Charges");
+    	        	 System.out.println("4.Track order");
+    	        	 System.out.println("5.Exit");
+    	        	 System.out.println("Enter your choice");
+    	        	 
+    	        	 switch(choice) {
+    	        	 case 1:
+    	        		 System.out.println("Available categories");
+    	        		 System.out.println("Food items");
+    	        		 System.out.println("Clothing");
+    	        		 System.out.println("Fashion and clothing");
+    	        		 System.out.println("Health and beauty");
+    	        		 System.out.println("Home Appliances");
+    	        		 break;
+    	        		 
+    	        	 case 2:
+    	        		 System.out.println("Enter the coupon code");
+    	        		 String coupon = "SAVE10";
+    	        		 
+    	        		 switch(coupon) {
+    	        		 case "SAVE10":
+    	        			 System.out.println("discount applied would be the 10 percent");
+    	        		 break;
+    	        		 
+    	        		 case "NEWUSER50":
+    	        			 System.out.println("dISCOUNT WOULD BE THE 50 PERCENT OF THE NEW USER ");
+    	        		 break;
+    	        		 
+    	        		 case "FREESHIP":
+    	        			 System.out.println("Free delivery activated");
+    	        		break;
+    	        		
+    	        		default:
+    	        			System.out.println("Invalid coupon code");
+    	        		 }
+    	        		 
+    	        	 }
+    	         break;
+    	         
+    	         
+    	         }
+    	         
+    }
 //
 //	Write switch program for real-life scenario:
 //	Ticket pricing system for flight/train/bus based on:

@@ -9,5 +9,6 @@ public class MethodPractice7Info {
 				m7.BankOperations();
 				m7.ageClassification();
 				m7.trafficSignal();
+				m7.ecommerceMenu();
 			}
 }
