@@ -50,7 +50,14 @@ public class MethodPractice5 {
 	
 //
 //	Use bitwise operators to perform operations &, |, ^.
-	
+	public void bitwiseOperation() {
+		int a =10;
+		int b=15;
+		System.out.println("Bitwise and :" +(a&b));
+		System.out.println("Bitwise or :" + (a|b));
+		System.out.println("Bitwise exor :" + (a^b));
+		
+	}
 //
 //	Write a program that swaps two numbers using arithmetic operators only.
 //

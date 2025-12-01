@@ -7,5 +7,6 @@ public class MethodPractice5Info {
 	m5.Equality();
 	m5.eligibility();
 	m5.UpdateValue();
+	m5.bitwiseOperation();
 }
 }
