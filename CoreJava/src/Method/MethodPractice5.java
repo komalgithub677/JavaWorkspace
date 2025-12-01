@@ -35,18 +35,22 @@ public class MethodPractice5 {
 			System.out.println("Person is eligible to take admission in the College");
 		}
 		else {
-			System.out.println("Person is not eligible to tkae admission in the college");
+			System.out.println("Person is not eligible to take admission in the college");
 		}
 	}
 //
 //	Use assignment operators to update value of a variable stepwise.
 //
 	public void UpdateValue() {
-		
+		int a = 3;
+		a +=10;
+		System.out.println("Value of the variable a is :" + (a));
 	}
 //	Use ternary operator to find greater between two numbers.
+	
 //
 //	Use bitwise operators to perform operations &, |, ^.
+	
 //
 //	Write a program that swaps two numbers using arithmetic operators only.
 //
