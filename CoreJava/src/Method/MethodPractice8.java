@@ -364,9 +364,5 @@ public class MethodPractice8 {
     		   count++;
     	   }
     	   System.out.println("Count of digits in a number");
-       }
-       
-      
-       
-      
+       }     
 }
