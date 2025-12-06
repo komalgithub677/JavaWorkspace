@@ -200,7 +200,17 @@ public class MethodPractice4 {
 	}
 //	Write a method to compare two numbers using relational operators and return the result.
 //
-	
+	public void comparison(int a , int b) {
+		if(a==b) {
+			System.out.println("Numbers are Equal");
+		}
+		else if(a>b) {
+			System.out.println("Greater");
+		}
+		else {
+			System.out.println("Lesser");
+		}
+	}
 //	Create a method to swap two numbers using:
 //
 //	(a) third variable
