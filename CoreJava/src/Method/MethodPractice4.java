@@ -169,6 +169,17 @@ public class MethodPractice4 {
 	}
 //	Write a method to find the largest of three numbers using relational operators.
 //
+	public void largest(int a , int b ,int c) {
+		if(a>b && a>c) {
+			System.out.println("a is largest" + a);
+		}
+		else if(b>a && b>c) {
+			System.out.println("b is largest: " + b);
+		}
+		else {
+			System.out.println("c is largest : "+ c);
+		}
+	}
 //	Write a method to calculate simple interest using arithmetic operators.
 //
 //	Create a method to check whether a number is positive, negative, or zero.

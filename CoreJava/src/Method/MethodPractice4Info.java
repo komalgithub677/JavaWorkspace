@@ -16,5 +16,6 @@ public class MethodPractice4Info {
 				m4.division(20, 10);
 				m4.modulo(20, 2);
 				m4.evenOdd(30);
+				m4.largest(3,4,5);
 			}
 }
