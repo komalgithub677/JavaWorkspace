@@ -13,5 +13,7 @@ public class TeacherInfo {
 				System.out.println("Subject : " + subject);
 				System.out.println("Experice : " + experience);
 				System.out.println("Salary : " + salary);
+				
+				
 			}
 }
