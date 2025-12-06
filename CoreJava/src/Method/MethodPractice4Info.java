@@ -18,5 +18,7 @@ public class MethodPractice4Info {
 				m4.evenOdd(30);
 				m4.largest(3,4,5);
 				m4.pNZero(4);
+				m4.swap(3, 2);
+				m4.failedStudent(13);
 			}
 }

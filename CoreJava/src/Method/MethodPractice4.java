@@ -214,6 +214,36 @@ public class MethodPractice4 {
 //	Create a method to swap two numbers using:
 //
 //	(a) third variable
+	public void swap(int a , int b) {
+		int temp = a;
+		a = b;
+		b =temp;
+		
+		System.out.println("Values after swap a : " + a);
+		System.out.println("Value after swap  a : " + b);
+	}
 //
 //	(b) without using third variable
+	
+//	Write a method to check whether a student passed or failed based on marks.
+//
+	public void failedStudent(int marks) {
+		if(marks>=35) {
+			System.out.println("Student Passed");
+		}
+		else {
+			System.out.println("Student Failed");
+		}
+	}
+//	Create a method to determine whether a number is a leap year.
+//
+//	Write a method to calculate grade based on percentage.
+//
+//	Create a method to check whether a character is a vowel or consonant.
+//
+//	Write a method to find largest number among three using if-else.
+//
+//	Write a method to calculate electricity bill using slabs and if-else.
+//
+//	Create a method to check eligibility to vote.
 }
