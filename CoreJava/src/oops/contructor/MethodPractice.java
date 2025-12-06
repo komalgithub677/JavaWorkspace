@@ -37,7 +37,6 @@ public class MethodPractice {
     		System.out.println("Number is not even");
     		return false;
     	}
-    	
     }
     
 }
