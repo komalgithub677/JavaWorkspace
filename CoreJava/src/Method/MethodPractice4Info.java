@@ -20,5 +20,6 @@ public class MethodPractice4Info {
 				m4.pNZero(4);
 				m4.swap(3, 2);
 				m4.failedStudent(13);
+				m4.leapYear(2022);
 			}
 }

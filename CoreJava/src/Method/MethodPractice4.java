@@ -237,8 +237,21 @@ public class MethodPractice4 {
 	}
 //	Create a method to determine whether a number is a leap year.
 //
+	public void leapYear(int year) {
+		if(year%4 ==0 && (year%400==0 || year%100==0)){
+			System.out.println("Leap year");
+		}
+		else {
+			System.out.println("Not a leap year");
+		}
+	}
 //	Write a method to calculate grade based on percentage.
 //
+	public void grade(int percentage) {
+		if(percentage > 90) {
+			System.out.println("Grade A");
+		}
+	}
 //	Create a method to check whether a character is a vowel or consonant.
 //
 //	Write a method to find largest number among three using if-else.
