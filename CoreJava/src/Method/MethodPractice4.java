@@ -182,10 +182,25 @@ public class MethodPractice4 {
 	}
 //	Write a method to calculate simple interest using arithmetic operators.
 //
+	public void simpleInterest(int principleAmount , int rate ) {
+		   
+	}
 //	Create a method to check whether a number is positive, negative, or zero.
 //
+	public void pNZero(int num) {
+		if(num==0) {
+			System.out.println("Number is zero");
+		}
+		else if(num>0) {
+			System.out.println("Positive Number");
+		}
+		else {
+			System.out.println("Negative");
+		}
+	}
 //	Write a method to compare two numbers using relational operators and return the result.
 //
+	
 //	Create a method to swap two numbers using:
 //
 //	(a) third variable
