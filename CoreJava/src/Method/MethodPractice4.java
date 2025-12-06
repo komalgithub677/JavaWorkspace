@@ -134,4 +134,50 @@ public class MethodPractice4 {
 			System.out.println("Login credential are not valid");
 		}
 	}
+	
+//	Write a Java program using a method to perform addition, subtraction, multiplication, and division of two numbers.
+//
+	public void addition(int a , int b) {
+		int sum = a+b;
+	    System.out.println("Sum :" + sum);
+		
+	}
+	
+	public void substraction(int a ,int b) {
+		int sub = a -b;
+		System.out.println("Substraction :" + sub);
+	}
+	
+	public void division(int a , int b) {
+		int div = a/b;
+		System.out.println("Division :" + div);
+	}
+	
+	public void modulo(int a , int b) {
+		int modulo = a%10;
+		System.out.println("Remainder :" + modulo);
+	}
+//	Create a method to check whether a number is even or odd using operators.
+//
+	public void evenOdd(int num) {
+		if(num%2==0) {
+			System.out.println("Number is even");
+		}
+		else {
+			System.out.println("Number is odd");
+		}
+	}
+//	Write a method to find the largest of three numbers using relational operators.
+//
+//	Write a method to calculate simple interest using arithmetic operators.
+//
+//	Create a method to check whether a number is positive, negative, or zero.
+//
+//	Write a method to compare two numbers using relational operators and return the result.
+//
+//	Create a method to swap two numbers using:
+//
+//	(a) third variable
+//
+//	(b) without using third variable
 }

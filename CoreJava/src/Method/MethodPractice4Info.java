@@ -11,5 +11,10 @@ public class MethodPractice4Info {
 				m4.jobeligibility();
 				m4.bonus();
 				m4.login();
+				m4.addition(10, 20);
+				m4.substraction(40, 30);
+				m4.division(20, 10);
+				m4.modulo(20, 2);
+				m4.evenOdd(30);
 			}
 }
