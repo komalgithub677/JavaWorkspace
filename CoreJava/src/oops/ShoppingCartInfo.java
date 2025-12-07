@@ -9,6 +9,5 @@ public class ShoppingCartInfo {
 				System.out.println("Cart Id : " + cartId);
 				System.out.println("Items : " + items);
 				System.out.println("Price : " + price);
-				
 			}
 }
