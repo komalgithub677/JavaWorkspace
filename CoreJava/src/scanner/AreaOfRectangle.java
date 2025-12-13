@@ -19,6 +19,5 @@ public class AreaOfRectangle {
 				    
 				    AreaOfRectangle a =new AreaOfRectangle();
 				    a.area(length, width);
-				    
 			}
 }
