@@ -32,13 +32,7 @@ public class TotalPercentage {
 				double sub5 = sc.nextDouble();
 				
 				TotalPercentage tp = new TotalPercentage();
-				tp.percentageTotal(sub1, sub2, sub3, sub4, sub5);
-				
-				
-				
-				
-				
-				
+				tp.percentageTotal(sub1, sub2, sub3, sub4, sub5);	
 			}
              
 }
