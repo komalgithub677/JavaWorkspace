@@ -59,7 +59,12 @@ public class PracticeQuestion {
 //	two integers
 //
 //	variable number of integers (var-args)
-	
+	public void sum(int a , int b) {
+		System.out.println(a+b);
+	}
+	public void sum(int a ,int b ,int c) {
+		System.out.println(a+b+c);
+	}
 //
 //	Intermediate Level
 //
@@ -68,6 +73,16 @@ public class PracticeQuestion {
 //	username & password
 //
 //	mobile number & OTP
+	public void login(String username , String password) {
+		System.out.println("Username  : " + username );
+		System.out.println("   Password :  " + password );
+	}
+	
+	public void login(long mobNo , String otp) {
+		System.out.println("mobNo : " + mobNo);
+		System.out.println("Otp : " + otp);
+	}
+	
 //
 //	7️⃣ Create a class Student and overload method getDetails() to accept:
 //
