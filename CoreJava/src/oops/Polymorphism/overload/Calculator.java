@@ -14,7 +14,7 @@ public class Calculator {
              public static void main(String[] args) {
 				Calculator c = new Calculator();
 				c.myAddition(12, 23);
-				c.myAddition(23.00, 45.00);
+				c.myAddition(23.00f, 45.00f);
 				c.myAddition(45.00, 46.00);
 			}
 }
