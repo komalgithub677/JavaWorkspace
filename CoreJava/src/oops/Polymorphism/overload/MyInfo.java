@@ -1,6 +1,6 @@
-package oops.Polymorphism;
+package oops.Polymorphism.overload;
 
-public class myInfo {
+public class MyInfo {
        public void myName(String fName) {
     	   System.out.println(fName);
        }
@@ -10,7 +10,7 @@ public class myInfo {
        }
        
        public static void main(String[] args) {
-		myInfo m = new myInfo();
+		MyInfo m = new MyInfo();
 		m.myName(null);
 		m.myName(null, null);
 		
