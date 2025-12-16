@@ -21,24 +21,45 @@ public class PracticeQuestion {
 //	an integer
 //
 //	a string
+	
+	public void display(int a ) {
+		        System.out.println(a);
+	}
+	public void display( String s) {
+		System.out.println(s);
+	}
 //
 //	3️⃣ Create overloaded methods multiply() to multiply:
 //
 //	two integers
 //
 //	two doubles
+	public void multiply(int a , int b) {
+		System.out.println("Multiplication of Two numbers : " + (a*b));
+	}
+	public void multiply(double a , double b) {
+		System.out.println("Multiplication of two numbers  : " + (a*b));
+	}
 //
 //	4️⃣ Write a class Area with overloaded methods to calculate:
 //
 //	area of square
 //
 //	area of rectangle
+	
+	public void area(int length , int width) {
+		System.out.println("Area of rectangle : " + (length * width));
+	}
+	public void area(int r , float pi) {
+		System.out.println("Area of cicrcle : " + (pi * r*r));
+	}
 //
 //	5️⃣ Create a method sum() that accepts:
 //
 //	two integers
 //
 //	variable number of integers (var-args)
+	
 //
 //	Intermediate Level
 //
@@ -117,4 +138,8 @@ public class PracticeQuestion {
 //	1️⃣9️⃣ Write a real-life example program using method overloading (any concept).
 //
 //	2️⃣0️⃣ Explain method overloading in 3–4 lines with one example.
+	
+	public static void main(String[] args) {
+		
+	}
 }
