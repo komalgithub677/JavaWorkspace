@@ -87,74 +87,59 @@ public class PracticeQuestion {
 //	7️⃣ Create a class Student and overload method getDetails() to accept:
 //
 //	roll number
+	public void getDetails(int rollNo) {
+		System.out.println("Roll No : " + rollNo);
+	}
 //
 //	roll number & name
+	public void getDetails(int rollNo , String name) {
+		System.out.println("Roll No : " + rollNo);
+		System.out.println("Nmae : " + name);
+	}
 //
 //	roll number, name & marks
+	public void getDetails(int rollNo ,String name , int marks) {
+		System.out.println("roll No : " + rollNo);
+		System.out.println("Name :" + name);
+		System.out.println("Marks : " + marks);
+	}
+	
 //
 //	8️⃣ Overload a method print() using:
 //
 //	int parameter
 //
 //	float parameter
+	public void print(int a) {
+		System.out.println(a);
+	}
+	public void print(float a) {
+		System.out.println(a);
+	}
 //
 //	9️⃣ Write a program where method overloading is done by changing parameter order.
+	public void changingParameter(int a ,String b) {
+		System.out.println("Value of a : " + a);
+		System.out.println("Value of b : " + b);
+	}
+	public void changingParameter(String b , int a) {
+		System.out.println("Value of b : " + b);
+		System.out.println("Value of a : " + a);
+	}
 //
 //	🔟 Create overloaded methods calculate() to calculate:
 //
 //	simple interest
-//
-//	compound interest
-//
-//	Advanced Level
-//
-//	1️⃣1️⃣ Overload the main() method and show that JVM calls only main(String[] args).
-//
-//	1️⃣2️⃣ Write a program to overload a method using:
-//
-//	int, int
-//
-//	double, double
-//
-//	1️⃣3️⃣ Can we overload a method by changing only return type?
-//	👉 Write code and show error.
-//
-//	1️⃣4️⃣ Create a class Bank and overload method deposit() for:
-//
-//	cash deposit
-//
-//	cheque deposit
-//
-//	online deposit
-//
-//	1️⃣5️⃣ Write a program to overload method search() for:
-//
-//	searching by ID
-//
-//	searching by name
-//
-//	Tricky / Conceptual
-//
-//	1️⃣6️⃣ Identify whether the following is valid overloading or not (write reason):
-//
-//	void show(int a);
-//	int show(int a);
-//
-//
-//	1️⃣7️⃣ Write a program to overload a method using:
-//
-//	String
-//
-//	String, int
-//
-//	1️⃣8️⃣ Can static methods be overloaded?
-//	👉 Write a program to prove it.
-//
-//	1️⃣9️⃣ Write a real-life example program using method overloading (any concept).
-//
-//	2️⃣0️⃣ Explain method overloading in 3–4 lines with one example.
-	
-	public static void main(String[] args) {
-		
+	public void calculate(int p , int r , int t) {
+	            int si = (p*r*t)/100;
+	            System.out.println(si);
 	}
+//	compound interest
+	public void calculate(int p ,int r ,int t , boolean isCompound) {
+		int CI = (int) (p * Math.pow((1 + r / 100), t) - p);
+		System.out.println("Compound interest would be : " + CI);
+	}
+//
+
+
 }
