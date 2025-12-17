@@ -1,6 +1,6 @@
 package oops.Polymorphism.MethodOverride;
 
-public class Child1 {
+public class Child1 extends Parent1{
              public void msg() {
             	 System.out.println("This is the child class method");
              }

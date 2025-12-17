@@ -1,6 +1,6 @@
 package oops.Polymorphism.MethodOverride;
 
-public class Bike {
+public class Bike extends Vehicle {
              public void speed() {
             	 System.out.println("Speed of the bike 120 km/hr");
              }
