@@ -1,6 +1,6 @@
 package oops.abstraction;
 
-public class Mobile {
+public class Mobile implements Camera , MusicPlayer {
              public void clickPhoto() {
             	 System.out.println("Click the photo...");
              }
