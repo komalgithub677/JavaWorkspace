@@ -1,12 +1,13 @@
 package oops.Polymorphism.MethodOverride;
 
-public class GooglePay extends Payment {
-             public void payment() {
-            	 System.out.println("Get cashback of 10 rupees");
-             }
-             
-             public static void main(String[] args) {
-				GooglePay g = new GooglePay();
-				g.payment();
-			}
+public class GooglePay extends Bank {
+             public void rateOfInterest() {
+            	 System.out.println("Get rate of interest of 10%");
+             }         
 }
+
+
+
+
+
+

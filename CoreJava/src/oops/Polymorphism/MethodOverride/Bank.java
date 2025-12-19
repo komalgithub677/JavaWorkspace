@@ -1,7 +1,7 @@
 package oops.Polymorphism.MethodOverride;
 
 public class Bank {
-             public void getInterest() {
+             public void rateOfInterest() {
             	 System.out.println("Get interest on the every Product");
              }
 }
