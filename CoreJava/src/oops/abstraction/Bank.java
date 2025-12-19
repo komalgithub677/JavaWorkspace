@@ -1,6 +1,6 @@
 package oops.abstraction;
 
 public interface Bank {
-        abstract void checkBalance();
-        
+	    public static final int a = 0;
+        abstract void checkBalance(String pin);
 }
