@@ -26,5 +26,11 @@ public class testOverride {
 				
 				b = new Hdfcs();
 				b.getRateOfInterest();
+				
+				System.out.println("      ");
+				
+				Parent3 p1 ;
+				p1 = new Child3();
+				p1.display();
 			}
 }
