@@ -74,6 +74,10 @@ public class PracticeOverload2 {
 //	Create a class Test with method sum(int a, int b).
 //	Call it using:
 //
+	public void sum(int a ,int b) {
+		int sum = a + b; 
+		System.out.println("Sum of a and b : " + sum);
+	}
 //	byte values
 //
 //	short values
@@ -99,8 +103,16 @@ public class PracticeOverload2 {
 		p.calculate(12.23, 12);
 		p.calculate(12, 12.23);
 		
+		//sum
+		byte x = 10;
+		byte y = 12;
 		
+		p.sum(x, y);
 		
+		short a = 10;
+		short b = 12;
 		
+		p.sum(a, b);
+			
 	}
 }
