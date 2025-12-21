@@ -17,5 +17,14 @@ public class testOverride {
 				Persons p;
 				p = new Students();
 				p.showDetails();
+				
+				System.out.println("         ");
+				
+				Banks b;
+				b = new SBIs();
+				b.getRateOfInterest();
+				
+				b = new Hdfcs();
+				b.getRateOfInterest();
 			}
 }
