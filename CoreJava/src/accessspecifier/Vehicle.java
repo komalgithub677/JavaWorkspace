@@ -1,5 +1,6 @@
 package accessspecifier;
 
-public interface Vehicle {
-                 void run();
+ interface Vehicle {
+                void run(double speed);
+                void start(double speed);
 }
