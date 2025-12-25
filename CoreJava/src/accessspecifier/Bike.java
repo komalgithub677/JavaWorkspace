@@ -1,6 +1,6 @@
 package accessspecifier;
 
-public class Bike implements Vehicle {
+public abstract class Bike implements Vehicle {
             
 			@Override
 			public void run(double speed) {
@@ -15,9 +15,9 @@ public class Bike implements Vehicle {
 			
 			  public static void main(String[] args) {
 					Vehicle v;
-					v= new Bike();
-					v.run(12.30);
-					v.run(23.30);
+//					v= new Bike();
+//					v.run(12.30);
+//					v.run(23.30);
 					
 				}
 }
