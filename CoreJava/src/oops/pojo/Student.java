@@ -5,7 +5,7 @@ public class Student {
              String studName;
              String city;
              College clg;//Reference creation
-			public Student() {
+			public Student(int id, String name, Course course) {
 				super();
 				// TODO Auto-generated constructor stub
 			}
