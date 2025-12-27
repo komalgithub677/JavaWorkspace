@@ -6,6 +6,7 @@ public class Demo {
 	         int age;
 	         String city;
 	         
+	         
 	         //constructor
 		        Demo(){
 		        	System.out.println("Demo constructor");
