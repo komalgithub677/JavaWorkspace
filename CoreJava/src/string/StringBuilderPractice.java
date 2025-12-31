@@ -47,7 +47,7 @@ public class StringBuilderPractice {
             	 	}
             	 	System.out.println("Count of characters : " + count);
             	 	
-//Check whether the string is palindrome using StringBuilder reverse().
+                   //Check whether the string is palindrome using StringBuilder reverse().
             	 	String s1 = "Komal";
             	 	
             	 	StringBuilder sb7 = new StringBuilder(s1);
