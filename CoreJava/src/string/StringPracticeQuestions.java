@@ -23,8 +23,10 @@ public class StringPracticeQuestions {
                         	   String s2 = "java";
                         	   System.out.println("Strings equality : "+ s1.equals(s2));
 //                        		   Concatenate two strings without using + operator.
-                        	   
+                        	   System.out.println("String concatenate : " + s1.concat(s2));
 //                        		   Check whether a string contains the word "Java". 
+                        	   System.out.println("String Contains java : "+s.contains("Java"));
+                        	   
 //                        		   Find the first and last character of a string.
 						}
 }
