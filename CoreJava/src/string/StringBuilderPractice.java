@@ -36,7 +36,7 @@ public class StringBuilderPractice {
             	 	 String s = "Hello";
             	 	StringBuilder sb5 = new StringBuilder(s);
             	 	sb5.append('k');
-            	 	System.out.println("String aftert modify : " + sb5);
+            	 	System.out.println("String after modify : " + sb5);
             	 	 
 //            	 		Count the number of characters using StringBuilder (without length()).
             	 	StringBuilder sb6 = new StringBuilder("Hello");
@@ -47,6 +47,12 @@ public class StringBuilderPractice {
             	 	}
             	 	System.out.println("Count of characters : " + count);
             	 	
-//            	 		Check whether the string is palindrome using StringBuilder reverse().
+//Check whether the string is palindrome using StringBuilder reverse().
+            	 	String s1 = "Komal";
+            	 	
+            	 	StringBuilder sb7 = new StringBuilder(s1);
+            	 	System.out.println("String before reverse : " + sb7);
+            	 	sb7.reverse();
+            	 	System.out.println("String after reverse : " + sb7);
 			}
 }
