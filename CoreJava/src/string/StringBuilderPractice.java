@@ -33,8 +33,20 @@ public class StringBuilderPractice {
             	 	 System.out.println("String after deletion : " + sb4);
             	 	 
 //            	 		Convert String to StringBuilder and modify it.
+            	 	 String s = "Hello";
+            	 	StringBuilder sb5 = new StringBuilder(s);
+            	 	sb5.append('k');
+            	 	System.out.println("String aftert modify : " + sb5);
             	 	 
 //            	 		Count the number of characters using StringBuilder (without length()).
+            	 	StringBuilder sb6 = new StringBuilder("Hello");
+            	 	int count = 0;
+            	 	for(int i=0; i<sb6.length(); i++) {
+            	 		System.out.println(sb6.charAt(i));
+            	 		count++;
+            	 	}
+            	 	System.out.println("Count of characters : " + count);
+            	 	
 //            	 		Check whether the string is palindrome using StringBuilder reverse().
 			}
 }
