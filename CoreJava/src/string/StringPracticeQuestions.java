@@ -28,5 +28,6 @@ public class StringPracticeQuestions {
                         	   System.out.println("String Contains java : "+s.contains("Java"));
                         	   
 //                        		   Find the first and last character of a string.
+                        	   System.out.println(s.charAt(0) + "  " + s.charAt(s.length()-1));
 						}
 }
