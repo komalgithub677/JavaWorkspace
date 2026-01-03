@@ -33,7 +33,7 @@ public class PreminumSavingsAccount extends SavingsAccount{
 		
 		
 		
-		PreminumSavingsAccount p = new PreminumSavingsAccount(accountNumber , amount ,);
+//		PreminumSavingsAccount p = new PreminumSavingsAccount(accountNumber , amount ,);
 		
 	}
 
