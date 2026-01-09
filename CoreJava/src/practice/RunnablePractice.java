@@ -3,7 +3,7 @@ package practice;
 public class RunnablePractice implements Runnable{
 	//Difference between start and the run method
 	//start()- Start method is used to call the run method and creates new thread internally
-	//Run()- Run method contains the actual logic 
+	//Run()- Run method contains the actual logic code of thread
              public void run() {
             	    System.out.println("This is the run method : ");
             	    
