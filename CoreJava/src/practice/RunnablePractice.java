@@ -17,6 +17,15 @@ public class RunnablePractice implements Runnable{
 				Thread t = new Thread(r);
 				t.start();
 				
+				for(int i=1; i<=10; i++) {
+					System.out.println("I value :" + i);
+				}
+				
+				//if we call the run method directly it is like a normal method call
+				//it does not create the new thread 
+				//So there is no multithreading concept
+				t.run();
+				
 			}
              
              
