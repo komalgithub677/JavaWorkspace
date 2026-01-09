@@ -1,5 +1,5 @@
-package multithreading.runnable;
-
-public class B implements Runnnable{
-             
-}
+//package multithreading.runnable;
+//
+//public class B implements Runnnable{
+//             
+//}
