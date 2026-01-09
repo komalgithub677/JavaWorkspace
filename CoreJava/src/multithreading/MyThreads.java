@@ -1,30 +1,74 @@
 package multithreading;
 
 public class MyThreads extends Thread {
-	                   //override run method
-                       public void run() {
-                    	   for(int i=1; i<=10; i++) {
-                    		   System.out.println("2's table " + 2*i);
-                    		   try {
-								sleep(2000);
-							} catch (InterruptedException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-                    		System.out.println("Thread name : " + getName());
-                    	   }
-                       }
-                       
-                       
-                       
-                       public static void main(String[] args) {
-						MyThreads m =new MyThreads();
-						Thread t = Thread.currentThread();
-						System.out.println(t.getName());
-						
-						//set name 
-						t.setName("My Thread");
-						m.run();
-					}
-                       
+
+    // run()
+    @Override
+    public void run() {
+        try {
+            System.out.println("Thread Name        : " + getName());
+            System.out.println("Thread Priority    : " + getPriority());
+            System.out.println("Is Daemon          : " + isDaemon());
+            System.out.println("Is Alive           : " + isAlive());
+            System.out.println("Thread State       : " + getState());
+
+            // sleep()
+            System.out.println("Thread sleeping...");
+            Thread.sleep(1000);
+
+            // yield() 
+            Thread.yield();
+
+            System.out.println("Thread resumed after sleep");
+
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // currentThread() 
+        Thread mainThread = Thread.currentThread();
+        System.out.println("Main Thread Name   : " + mainThread.getName());
+
+        //  create thread 
+        MyThreads t = new MyThreads();
+
+        //  setName() 
+        t.setName("MyThread");
+
+        //  setPriority() 
+        t.setPriority(Thread.MAX_PRIORITY);
+
+        //  setDaemon() 
+        t.setDaemon(false); // must be before start()
+
+        //  isAlive() before start 
+        System.out.println("Before start alive : " + t.isAlive());
+
+        //  start() 
+        t.start();
+
+        // isAlive() after start 
+        System.out.println("After start alive  : " + t.isAlive());
+
+        //  join() 
+        try {
+            t.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // interrupt() 
+        t.interrupt();
+
+        //  isInterrupted() 
+        System.out.println("Is Interrupted     : " + t.isInterrupted());
+
+        //  getState() 
+        System.out.println("Final State        : " + t.getState());
+
+        System.out.println("Main thread ends");
+    }
 }
