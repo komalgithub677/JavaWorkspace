@@ -26,8 +26,5 @@ public class ThreadPriority extends Thread  {
 				t1.start();
 				t2.start();
 				t3.start();
-				
-				
-				
 			}
 }
