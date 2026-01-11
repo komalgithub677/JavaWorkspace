@@ -2,7 +2,7 @@ package practice.Practice1;
 
 import java.util.Scanner;
 
-public class FactorialOfNumber {
+public class PracticeQuestions {
                public void fact(int n) {
             	   int fact = 1;
             	   for(int i=1; i<=n; i++) {
@@ -49,12 +49,27 @@ public class FactorialOfNumber {
                }
 //
 //               Find the sum of digits of a number.
+               public void sumOfDigit(int n) {
+            	   int count =0;
+            	   int sum =0;
+            	   for(int i=n; i>0; i=i/10) {
+            		   int digit = i%10;
+            		   sum = sum + digit;
+            		   count++;
+            	   }
+            	   System.out.println("Sum of digit : " + sum);
+               }
 //
 //               Print the multiplication table of a given number.
+               public void multiplicationTable(int n) {
+            	   for(int i=1; i<=10; i++) {
+            		   System.out.println("Table of N : " + n*i);
+            	   }
+               }
                
                
                public static void main(String[] args) {
-				FactorialOfNumber f = new FactorialOfNumber();
+				PracticeQuestions f = new PracticeQuestions();
 				Scanner sc = new Scanner(System.in);
 				System.out.println("Enter a number : ");
 				int n = sc.nextInt();
@@ -65,6 +80,10 @@ public class FactorialOfNumber {
 				f.reverse(n);
 				
 				f.palindrome(n);
+				
+				f.sumOfDigit(n);
+				
+				f.multiplicationTable(n);
 				
 			}
 }
