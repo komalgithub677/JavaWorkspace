@@ -31,6 +31,22 @@ public class FactorialOfNumber {
                }
 //
 //               Check whether a number is Palindrome.
+               public void palindrome(int n) {
+            	   int rev = 0;
+            	   int originalNumber = n;
+            	   for(int i=n; i>0; i=i/10) {
+            		   int digit = i%10;
+            		   rev = rev * 10 + digit;
+            	   }
+            	   System.out.println("Rverse number : " + rev);
+            	   
+            	   if(rev==originalNumber) {
+            		   System.out.println("Number is palindrome number ");
+            	   }
+            	   else {
+            		   System.out.println("Number is not palindrome number ");
+            	   }
+               }
 //
 //               Find the sum of digits of a number.
 //
@@ -47,6 +63,8 @@ public class FactorialOfNumber {
 				f.countDigit(n);
 				
 				f.reverse(n);
+				
+				f.palindrome(n);
 				
 			}
 }
