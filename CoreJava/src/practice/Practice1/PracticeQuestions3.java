@@ -68,13 +68,40 @@ public class PracticeQuestions3 {
 	}
 //
 //	Find the frequency of each character in a string.
+	public void freq(String s) {
+		int []freq = new int[256];
+		
+		for(int i=1; i<s.length()-1; i++) {
+			char ch = s.charAt(i);
+			freq[ch]++;
+		}
+		
+		System.out.println("Count frequency :");
+		
+		for(int i=0; i<256; i++) {
+			if(freq[i]>0 && i!= ' ') {
+				System.out.println((char) i + " " + freq);
+			}
+		}
+	}
 //
 //	Remove spaces from a string using loop.
+	public void removeSpaces(String s) {
+		String result = " " ;
+		
+		for(int i=0; i<s.length(); i++) {
+			if(s.charAt(i)!=' ') {
+				result = result + s.charAt(i);
+			}
+			
+		}
+		System.out.println("Result = " + result);
+	}
 	
 	public static void main(String[] args) {
 		PracticeQuestions3 p = new PracticeQuestions3();
 		Scanner sc = new Scanner(System.in);
-		String s = "Komal";
+		String s = "      Komal";
 		p.reverseString(s);
 		
 		p.vowelConsonant();
@@ -82,5 +109,9 @@ public class PracticeQuestions3 {
 		p.findDuplicateChars(s);
 		
 		p.palindromeString(s);
+		
+		p.freq(s);
+		
+		p.removeSpaces(s);
 	}
 }
