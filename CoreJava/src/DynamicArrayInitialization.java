@@ -57,23 +57,23 @@ public class DynamicArrayInitialization {
 
             	      
                          Scanner sc = new Scanner(System.in);
-            	         float[] flo = new float[5];
-
-            	         System.out.println("Enter 5 float values:");
-
-            	         for (int i = 0; i < flo.length; i++) {
-            	             flo[i] = sc.nextFloat();   // ✅ ONLY nextFloat
-            	         }
-
-            	         System.out.println("Array elements:");
-            	         for (int i = 0; i < flo.length; i++) {
-            	             System.out.println(flo[i]);
-            	         }
-
-            	         DynamicArrayInitialization  d = new DynamicArrayInitialization ();
-            	         d.maximum(flo);
-            	         d.minimum(flo);
-            	         
+//            	         float[] flo = new float[5];
+//
+//            	         System.out.println("Enter 5 float values:");
+//
+//            	         for (int i = 0; i < flo.length; i++) {
+//            	             flo[i] = sc.nextFloat();   // ✅ ONLY nextFloat
+//            	         }
+//
+//            	         System.out.println("Array elements:");
+//            	         for (int i = 0; i < flo.length; i++) {
+//            	             System.out.println(flo[i]);
+//            	         }
+//
+//            	         DynamicArrayInitialization  d = new DynamicArrayInitialization ();
+//            	         d.maximum(flo);
+//            	         d.minimum(flo);
+//            	         
 
             	 
 //
@@ -84,12 +84,28 @@ public class DynamicArrayInitialization {
 //            	 Take input from the user
 //
 //            	 Print names that start with a vowel
+            	        String s[] = {"Komal" , "isha","Snehal" ,"Monika"};
+            	        String start = s[0];
+            	         for(int i=0; i<s.length; i++) {
+            	        	char firstCharacter = Character.toLowerCase(s[i].charAt(0));
+            	        	
+            	        	if(firstCharacter =='a' || firstCharacter=='i' || firstCharacter=='o' || firstCharacter=='u'||firstCharacter=='e') {
+            	        		System.out.println(s[i]);
+            	        	}
+            	        	
+            	         }           	         
 //
 //            	 Q🔟 (Very Important)
 //
 //            	 Create a dynamic integer array and:
 //
 //            	 Count even and odd numbers separately
+            	         
+            	         int numbers[] = new int[5];
+            	         
+            	         for(int i=0; i<numbers.length; i++) {
+            	        	 
+            	         }
 //
 //            	 Q1️⃣1️⃣
 //
