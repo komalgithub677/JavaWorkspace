@@ -24,6 +24,28 @@ public class Day2Array {
            }
            System.out.println("Sum of array elements  : " +sum);
            
+           //largest elements
+           int max = num[0];
+           
+           for(int i=0; i<num.length; i++) {
+        	   if(num[i]>max) {
+        		   max = num[i];
+        	   }
+        	   
+           }
+           System.out.println("Max Element : " + max);
+           
+           //smallest element
+           int min = num[0];
+           
+           for(int i=0; i<num.length; i++) {
+        	   if(num[i]<min) {
+        		   min = num[i];
+        	   }
+           }
+           
+           System.out.println("Minimum Element : " + min);
+           
            
            
            
