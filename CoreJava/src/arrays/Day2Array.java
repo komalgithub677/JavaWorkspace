@@ -46,6 +46,15 @@ public class Day2Array {
            
            System.out.println("Minimum Element : " + min);
            
+           //even numbers
+           System.out.println("Even numbers : ");
+           for(int i=0; i<num.length; i++) {
+        	   if(num[i]%2==0) {
+        		   System.out.println(num[i]);
+        	   }
+           }
+           
+           //check whether the number exist in the array
            
            
            
