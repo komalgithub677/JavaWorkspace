@@ -55,21 +55,28 @@ public class Day2Array {
            }
            
            //check whether the number exist in the array
+           int nums = 2;
            
+           for(int i=0; i<num.length; i++) {
+        	   if(num[i]==nums) {
+        		   System.out.println("Present in array");
+        	   }
+        	   else {
+        		   System.out.println("Not present in array");
+        	   }
+           }
            
+           //create copy of array
+           //creating copy with the same size
+           int nums1[] = new int[num.length];
            
+           for(int i=0; i<nums1.length; i++) {
+        	   nums1[i] =num[i];
+           }
            
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
+           System.out.println("Copied array : ");
+           for(int i=0 ;i<nums1.length; i++) {
+        	   System.out.println(nums1[i]);
+           }       
 	}
 }
