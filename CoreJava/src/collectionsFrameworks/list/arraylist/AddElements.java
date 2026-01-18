@@ -24,17 +24,29 @@ public class AddElements {
 				System.out.println(list);
 //
 //						Add an element at a specific index in an ArrayList.
+				System.out.println(list.set(2, 23));
+				System.out.println(list);
 //
 //						Remove an element by index from an ArrayList.
+				System.out.println(list.remove(1));
+				System.out.println(list);
 //
 //						Remove an element by value from an ArrayList.
+				System.out.println(list.remove(Integer.valueOf(7)));
+				System.out.println(list);
 //
 //						Check whether an ArrayList is empty or not.
+				System.out.println(list.isEmpty());
 //
 //						Write a program to get an element at a given index.
+				System.out.println(list.get(3));
 //
 //						Replace an element in an ArrayList using set().
+				System.out.println(list.set(2, 34));
+				System.out.println(list);
 //
 //						Clear all elements from an ArrayList.
+				System.out.println(list.removeAll(list));
+				System.out.println(list);
 			}
 }
