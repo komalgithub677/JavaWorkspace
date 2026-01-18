@@ -26,8 +26,6 @@ public class ReverseArrayList {
 			        start++;
 			        last--;
 				}
-		
-			
 			System.out.println(list);
 				
 				
