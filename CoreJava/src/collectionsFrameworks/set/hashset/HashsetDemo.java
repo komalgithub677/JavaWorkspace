@@ -20,8 +20,8 @@ public class HashsetDemo {
 				System.out.println(set);
 				
 				Iterator<Integer> itr = set.iterator();
-				while(itr.has) {
-					System.out.println(e.nextElement());
+				while(itr.hasNext()) {
+					System.out.println(itr.hasNext());
 				}
 				
 				
