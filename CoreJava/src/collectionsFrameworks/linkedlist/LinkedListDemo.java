@@ -68,7 +68,6 @@ public class LinkedListDemo {
 //
 //				What will peek() return?
 				Integer element = l1.peek();//returns the first head elements
-				System.out.println(element);
-				
+				System.out.println(element);	
 			}
 }
