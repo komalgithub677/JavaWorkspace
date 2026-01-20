@@ -35,7 +35,7 @@ public class LinkedListDemo {
 				l1.remove(l1.size()-1);
 				System.out.println();
 //
-//				Write code to add the element 15.
+//			
 				l1.remove(l1.add(23));
 				System.out.println(l1);
 //
