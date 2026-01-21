@@ -4,11 +4,13 @@ import java.util.*;
 
 public class SinglyLinkedList extends Node {
 
+	
+	
 	SinglyLinkedList(int data) {
 		super(data);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	Node head;
 	
 	//Insert at end
