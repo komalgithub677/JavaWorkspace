@@ -20,6 +20,5 @@ public class CountNumberOfConsonant {
 				
 				CountNumberOfConsonant c = new CountNumberOfConsonant ();
 				c.consonant(s);
-				
 			}
 }
