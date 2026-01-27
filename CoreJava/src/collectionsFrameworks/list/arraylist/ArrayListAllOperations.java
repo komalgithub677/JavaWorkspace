@@ -48,6 +48,10 @@ public class ArrayListAllOperations {
 				
 				//sort the list reverse order
 				Collections.sort(list ,Collections.reverseOrder());
-				System.out.println(list);	
+				System.out.println(list);
+				
+				//Lists to string conversion
+				System.out.println(list.toString());
+				
 			}
 }
