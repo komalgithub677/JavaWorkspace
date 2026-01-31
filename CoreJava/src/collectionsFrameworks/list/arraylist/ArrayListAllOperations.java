@@ -52,6 +52,5 @@ public class ArrayListAllOperations {
 				
 				//Lists to string conversion
 				System.out.println(list.toString());
-				
 			}
 }
