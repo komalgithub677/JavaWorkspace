@@ -77,8 +77,16 @@ public class ArraysPracticeQ {
 	}
 //
 //	Check whether a given element exists in the array (linear search).
+	public void linearSearch(int arr[] , int key) {
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i] == key) {
+				System.out.println("Element found at index : "+ i);
+			}
+		}
+	}
 //
 //	Count the frequency of each element.
+	
 //
 //	Copy elements from one array to another.
 //
@@ -106,5 +114,8 @@ public class ArraysPracticeQ {
 		for(int i : arr) {
 			System.out.println(i + " ");
 		}
+		
+		
+		a.linearSearch(arr, 12);
 	}
 }
