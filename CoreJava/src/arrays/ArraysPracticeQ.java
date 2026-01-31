@@ -86,13 +86,42 @@ public class ArraysPracticeQ {
 	}
 //
 //	Count the frequency of each element.
-	
+	public void frequencyCount(int arr[] ,int target) {
+		   int count =0;
+		   
+		   for(int i=0; i<arr.length; i++) {
+			   if(arr[i]==target) {
+				   count++;
+			   }
+		   }
+		   
+		   System.out.println("Count of element : " + count);
+	}
 //
 //	Copy elements from one array to another.
+	
+	public void copy(int arr[]) {
+		
+		int arr1[] = new int [arr.length];
+		
+		System.out.println("Original array Elements : ");
+		for(int i=0; i<arr.length; i++) {
+			arr1[i] = arr[i];
+			System.out.println(arr[i]);
+		}
+		
+		System.out.println("Copied array Elements : ");
+		for(int i=0; i<arr.length; i++) {
+			System.out.println( arr1[i]);
+		}
+		
+	}
 //
 //	Find the second largest element in the array.
 //
 //	Replace all negative numbers with 0.
+	
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArraysPracticeQ  a = new ArraysPracticeQ ();
@@ -117,5 +146,9 @@ public class ArraysPracticeQ {
 		
 		
 		a.linearSearch(arr, 12);
+		
+		a.frequencyCount(arr, 2);
+		
+		a.copy(arr);
 	}
 }
