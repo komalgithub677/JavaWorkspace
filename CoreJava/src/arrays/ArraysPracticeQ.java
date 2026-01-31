@@ -118,8 +118,27 @@ public class ArraysPracticeQ {
 	}
 //
 //	Find the second largest element in the array.
+	
+	public void secondLargestElement(int arr[]) {
+		int max1 = Integer.MIN_VALUE;
+		int max2 = Integer.MIN_VALUE;
+		
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i]>max1) {
+				max2 = max1;
+				max1 = arr[i];
+			}
+			else if(arr[i]>max2 && arr[i] !=0) {
+				max2 =arr[i];
+			}
+		}
+		
+		System.out.println("First max : " + max1);
+		System.out.println("Second max : " + max2);
+	}
 //
 //	Replace all negative numbers with 0.
+	
 	
 	
 	public static void main(String[] args) {
@@ -150,5 +169,7 @@ public class ArraysPracticeQ {
 		a.frequencyCount(arr, 2);
 		
 		a.copy(arr);
+		
+		a.secondLargestElement(arr);
 	}
 }
