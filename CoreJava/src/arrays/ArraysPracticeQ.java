@@ -138,7 +138,9 @@ public class ArraysPracticeQ {
 	}
 //
 //	Replace all negative numbers with 0.
-	
+	public void replaceNegativeWithZero(int arr[]) {
+		        
+	}
 	
 	
 	public static void main(String[] args) {
