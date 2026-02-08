@@ -6,6 +6,5 @@ public class TestEmployee {
 		    
 		    ConstructorUses c =new Child(12);
 		    c.display();
-		    
 		}
 }
