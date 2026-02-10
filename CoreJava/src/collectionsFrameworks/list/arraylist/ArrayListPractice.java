@@ -101,33 +101,23 @@ public class ArrayListPractice {
             	  System.out.println(list);
             	  
 //            	  🔹 Task 11: Replace an Element
-            	  list.replaceAll(null);
+            	  System.out.println("List before setting element");
+            	  System.out.println(list);
+            	  list.set(2, 56);
+            	  System.out.println("List after setting element");
             	  System.out.println(list);
             	
             	  
-
-            	
-//
-//            	  Write a program to print all elements of an ArrayList using:
-//
-//            	  for loop
-//
-//            	  enhanced for loop
-//
-//            	  iterator
-//
-//            	  Write a program to find the size of an ArrayList.
-//
-//            	  Write a program to get an element at a specific index.
-//
-//            	  Write a program to remove an element by:
-//
-//            	  index
-//
-//            	  value
-//
-//            	  Write a program to check whether an element exists in an ArrayList.
-//
-//            	  Write a program to clear all elements from an ArrayList.
+//            	  🔹 Task 12: Reverse the ArrayList
+            	  System.out.println(list.reversed());
+            	  
+            	  for(int i=list.size()-1; i>0; i--) {
+            		  System.out.println(list);
+            	  }
+            	  
+//            	  Remove all elements from the list
+            	  list.removeAll(list);
+            	  System.out.println(list);
+            	  
 			}
 }
