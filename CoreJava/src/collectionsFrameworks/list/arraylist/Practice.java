@@ -46,11 +46,11 @@ public class Practice {
 	         list.add(100);
 	         
 	         //safe removal using the iterator
-	         Iterator<Integer> it = list.iterator();
+	         Iterator<Integer> it1 = list.iterator();
 	         
-	         while(it.hasNext()) {
-	        	 if(it.next()==20) {
-	        		 it.remove();//Safe
+	         while(it1.hasNext()) {
+	        	 if(it1.next()==20) {
+	        		 it1.remove();//Safe
 	        	 }
 	         }
 	         
@@ -73,10 +73,8 @@ public class Practice {
 	         //Using Streams(Functional and Advanced)
 	         list.stream()
 	         .forEach(System.out::println);
-	         
-	         
-	         
-	         
+	        
+	         //Vector - is an legacy class , it is synchronized,it is thread safe , vector is iterate using the listiterator
 	         Vector<Integer> vector = new Vector<>();
 	         vector.add(14);
 	         vector.add(15);
@@ -87,9 +85,9 @@ public class Practice {
 	         vector.add(19);
 	         vector.add(13);
 	         vector.add(10);
-	         
+	       
 	         System.out.println(vector);
-	         
+	       //linked list extends the deque and the another list interface , clonable and the java.i.o serailizable interface
 	         LinkedList<Integer> link = new LinkedList<>();
 	         
 	         link.add(34);
@@ -104,6 +102,9 @@ public class Practice {
 	         link.add(38);
 	         
 	         System.out.println(link);
+	         
+	         
+	         HashMap<k,V> map = new H
 	         
 	         
 	         
