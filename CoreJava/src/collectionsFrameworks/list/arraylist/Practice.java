@@ -101,15 +101,6 @@ public class Practice {
 	         link.add(36);
 	         link.add(38);
 	         
-	         System.out.println(link);
-	         
-	         
-	         HashMap<k,V> map = new H
-	         
-	         
-	         
-	         
-	         
-	         
+	         System.out.println(link);	         
 }
 }
