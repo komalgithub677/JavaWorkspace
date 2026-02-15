@@ -13,5 +13,5 @@ public class B {
 	  
 	  System.out.println(s1.equals(s2));//references
 	  System.out.println(s1.equals(s3));//values
-}
+      }
 }
