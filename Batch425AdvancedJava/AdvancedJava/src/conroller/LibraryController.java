@@ -1,12 +1,12 @@
-package controller;
+package conroller;
 
-import service.StudentService;
+import service.LibraryService;
 
-public class StudentController {
+public class LibraryController {
 
 	public static void main(String[] args) throws Exception {
 
-		StudentService ss = new StudentService();
+		LibraryService ss = new LibraryService();
 //		ss.insertData();
 //		ss.updateData();
 //		ss.deleteData();
