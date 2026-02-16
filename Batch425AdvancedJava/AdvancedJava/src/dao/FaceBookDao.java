@@ -12,7 +12,7 @@ public class FaceBookDao {
     	   System.out.println("Connection successful");
     	   Statement s = c.createStatement();
     	   
-    	   ResultSet rs = s.executeQuery("Select * instagramUser");
+    	   ResultSet rs = s.executeQuery("Select * FaceBookUser");
     	   
     	   while(rs.next()) {
     		   System.out.println(rs.getInt(1) + " " + rs.getString(2));
@@ -27,7 +27,7 @@ public class FaceBookDao {
         	  
         	  Statement s = c.createStatement();
         	  
-        	  int check = s.executeUpdate("insert into instgramUser(id,name,email) values(11 , 'Komal' ,'knarawade4@gmail.com')");
+        	  int check = s.executeUpdate("insert into FaceBookUser(id,name,email) values(11 , 'Komal' ,'knarawade4@gmail.com')");
         	  
         	  if(check>0) {
         		  System.out.println("Data is inserted");
@@ -45,7 +45,7 @@ public class FaceBookDao {
         	  
         	  Statement s = c.createStatement();
         	  
-        	  int check = s.executeUpdate("update instagramUser set name ='Monika' where id = 11");
+        	  int check = s.executeUpdate("update FaceBookUser set name ='Monika' where id = 11");
         	  
         	  if(check>0) {
         		  System.out.println("Data is updated");
@@ -63,7 +63,7 @@ public class FaceBookDao {
         	  
         	  Statement s = c.createStatement();
         	  
-        	  int check = s.executeUpdate(" delete from intstagramUser where id = 11");
+        	  int check = s.executeUpdate(" delete from FaceBookUser where id = 11");
         	  
         	  if(check>0) {
         		  System.out.println("Data is deleted");
