@@ -6,13 +6,11 @@ public class LibraryUser {
              private String  name;
              private String email;
              
-             
              public void FaceBookUser(int id ,int bookid ,String name , String email ) {
             	 this.id =id;
             	 this.bookid = bookid;
             	 this.name =name;
             	 this.email = email;
-            	 this.mobNo = mobNo;
              }
              
              public int getid() {
@@ -27,7 +25,7 @@ public class LibraryUser {
             	 return email;
              }
              
-             public long getMob() {
-            	 return mobNo;
+             public int bookid() {
+            	 return bookid;
              }
 }
