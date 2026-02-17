@@ -27,6 +27,22 @@ public class StringPractice4 {
 				
 				System.out.println(first);
 				System.out.println(last);
+				
+				
+//				on the Basis of StringBuilder & StringBuffer : 
+//
+//					Create a StringBuilder with text "Hello" and append " Java".
+				 StringBuilder sb = new StringBuilder("Hello");
+				 sb.append("Java");
+				 System.out.println(sb);
+//					Create a StringBuilder and insert the word "Java" in the middle of a sentence.
+//					Reverse a string using StringBuilder.
+//					Replace the word "Java" with "Python" using StringBuilder.
+//					Delete characters from index 2 to 5 using StringBuilder.
+//					Convert String to StringBuilder and modify it.
+//					Count the number of characters using StringBuilder (without length()).
+//					Check whether the string is palindrome using StringBuilder reverse().
+
 
 			}
 }
