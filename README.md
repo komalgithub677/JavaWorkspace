@@ -1,82 +1,81 @@
-📘 Java Core Concepts – Programs Collection
+📘 Java Complete Concepts – Programs Collection
 
-This repository contains Java programs based on core concepts such as variables, datatypes, operators, conditional statements, loops, methods, arrays, OOP concepts, exception handling, and more.
-It is designed for beginners and students learning Java fundamentals.
+This repository contains Java programs covering Core Java and Advanced Java concepts.
+It is designed for beginners, students, and job aspirants who want to build a strong foundation in Java and prepare for interviews.
 
-🚀 Topics Covered
+🚀 Core Java Topics Covered
 ✔ 1. Variables & Datatypes
 
 Integer, Float, Double, Char, Boolean
 
 String
 
-Type casting
+Type Casting
 
-User input using Scanner
+User Input using Scanner
 
 ✔ 2. Operators
 
-Arithmetic operators
+Arithmetic Operators
 
-Logical operators
+Logical Operators
 
-Relational operators
+Relational Operators
 
-Assignment operators
+Assignment Operators
 
-Unary operators
+Unary Operators
 
 ✔ 3. Conditional Statements
+Programs Included:
 
-Programs included:
+Check Profit or Loss
 
-Check profit or loss
+Voting Eligibility
 
-Check voting eligibility
+Alphabet / Digit Check
 
-Check if character is alphabet/digit
+Number Ends with 5
 
-Check if number ends with 5
+Strong Password Validation
 
-Check strong password
+Perfect Square Check
 
-Check perfect square
+Loan Approval (Income + Credit Score)
 
-Check loan approval (income + credit score)
+Triangle Validity & Type
 
-Check triangle validity and type
+Scholarship Eligibility
 
-Scholarship eligibility
+Overtime Payment Calculation
 
-Overtime payment
-
-Valid marks (0–100)
+Valid Marks Check (0–100)
 
 ✔ 4. Loops
 
-For loop
+For Loop
 
-While loop
+While Loop
 
-Do-while loop
+Do-While Loop
 
-Patterns printing
+Pattern Printing
 
-Sum of digits
+Sum of Digits
 
-Factorials
+Factorial Program
 
-Multiplication table
+Multiplication Table
 
 ✔ 5. Methods
 
-Simple methods
+Simple Methods
 
-Methods with parameters
+Methods with Parameters
 
-Methods with return values
+Methods with Return Values
 
-Overloading
+Method Overloading
 
 ✔ 6. Arrays
 
@@ -84,11 +83,11 @@ Overloading
 
 2D Arrays
 
-Searching elements
+Searching Elements
 
-Largest / Smallest element
+Largest / Smallest Element
 
-Sum of array elements
+Sum of Array Elements
 
 ✔ 7. Object-Oriented Programming (OOP)
 
@@ -104,44 +103,137 @@ Encapsulation
 
 Abstraction
 
+Interfaces
+
 ✔ 8. Exception Handling
 
-Try-catch
+Try-Catch
 
-Multiple catch blocks
+Multiple Catch Blocks
 
-Finally block
+Finally Block
 
-Throw and throws
+Throw & Throws
+
+Custom Exceptions
+
+🚀 Advanced Java Topics Covered
+✔ 1. Multithreading
+
+Thread Class
+
+Runnable Interface
+
+Thread Lifecycle
+
+Synchronization
+
+Inter-thread Communication
+
+Executor Framework
+
+✔ 2. Collections Framework
+
+List (ArrayList, LinkedList)
+
+Set (HashSet, LinkedHashSet, TreeSet)
+
+Map (HashMap, TreeMap)
+
+Iterator
+
+Comparable & Comparator
+
+✔ 3. Java 8 Features
+
+Lambda Expressions
+
+Functional Interfaces
+
+Stream API
+
+Method References
+
+Optional Class
+
+✔ 4. File Handling
+
+File Class
+
+FileReader / FileWriter
+
+BufferedReader / BufferedWriter
+
+Serialization & Deserialization
+
+✔ 5. JDBC (Database Connectivity)
+
+JDBC Architecture
+
+Connecting to Database
+
+Statement & PreparedStatement
+
+ResultSet
+
+CRUD Operations
+
+✔ 6. Servlet & JSP Basics
+
+Servlet Lifecycle
+
+doGet() & doPost()
+
+RequestDispatcher
+
+Session Management
+
+JSP Directives
+
+✔ 7. Maven & Project Structure
+
+Dependency Management
+
+Build Lifecycle
+
+Project Packaging
 
 🛠 How to Run the Programs
+1️⃣ Install JDK 8 or Above
 
-Install JDK 8 or above
+Download and install Java JDK.
 
-Use any IDE (VS Code / IntelliJ / Eclipse)
+2️⃣ Use Any IDE
 
-Compile the program:
+VS Code
 
+Eclipse IDEA
+
+Eclipse
+
+3️⃣ Compile the Program
 javac FileName.java
 
-
-Run the program:
-
+4️⃣ Run the Program
 java FileName
 
 🎯 Purpose of This Repository
 
-To help students revise Java core concepts
+📚 Help students revise Core & Advanced Java
 
-To prepare for interviews and exams
+💼 Prepare for interviews and exams
 
-To practice conditional and logical programs
+🧠 Practice logical and object-oriented programs
 
-To maintain clean GitHub coding portfolio
+💻 Build a strong GitHub coding portfolio
+
+🚀 Strengthen real-world Java development skills
 
 🤝 Contributions
 
-Feel free to:
+Contributions are welcome!
+
+You can:
 
 Add new Java programs
 
@@ -149,4 +241,7 @@ Improve code optimization
 
 Fix bugs or formatting
 
-Pull requests are welcome!
+Enhance documentation
+
+Feel free to create a Pull Request 😊
+
