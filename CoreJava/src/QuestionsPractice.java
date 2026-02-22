@@ -194,6 +194,16 @@ public class QuestionsPractice {
 	        	 System.out.println("First maximum : " + max1);
 	        	 System.out.println("Second maximum : " + max2);
 	         }
+	         
+	         public void linearSearch(int arr[] , int target) {
+	        	for(int i=0; i<arr.length; i++) {
+	        		if(arr[i]== target) {
+	        			System.out.println("Element Found at index :  " + i);
+	        			break;
+	        		}
+	        		
+	        	}
+	         }
              
              public static void main(String[] args) {
 				QuestionsPractice q = new QuestionsPractice();
@@ -300,5 +310,11 @@ public class QuestionsPractice {
 				
 				//second largestElement
 				q.secondLargest(arr);
+				
+				//linear search
+				System.out.println("Enter the target what you want to search ");
+				int target = sc.nextInt();
+				q.linearSearch(arr, target);
+				
 }
 }
