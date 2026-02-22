@@ -204,6 +204,37 @@ public class QuestionsPractice {
 	        		
 	        	}
 	         }
+	         
+	         public void binarySearch(int arr[] ,int target) {
+	        	 Arrays.sort(arr);
+	        	 int n = arr.length;
+	        	 int low =0; int high = n-1;
+	        	 
+	             boolean found = false;
+	             
+	             while(low<=high) {
+	            	 int mid = (low + high)/2;
+	            	 if(arr[mid] ==target) {
+	            		 found = true;
+	            		 break;
+	            	 }
+	            	 
+	            	 else if(arr[mid]<target) {
+	            		 low = mid + 1;
+	            	 }
+	            	 else {
+	            		high =mid -1;
+	            	 }
+	            	
+	             }
+	             if(found == true) {
+	            	 System.out.println("Element Found");
+	             }
+	             else {
+	            	 System.out.println("Element not found");
+	             }
+	            
+	             }
              
              public static void main(String[] args) {
 				QuestionsPractice q = new QuestionsPractice();
@@ -315,6 +346,9 @@ public class QuestionsPractice {
 				System.out.println("Enter the target what you want to search ");
 				int target = sc.nextInt();
 				q.linearSearch(arr, target);
+				
+				//Binary search
+				q.binarySearch(arr, target);
 				
 }
 }
