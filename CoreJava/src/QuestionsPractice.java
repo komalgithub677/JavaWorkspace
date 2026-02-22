@@ -235,6 +235,69 @@ public class QuestionsPractice {
 	             }
 	            
 	             }
+	         
+	         public void bubbleSort(int arr[]) {
+	        	 int n = arr.length;
+	      
+	        	 for(int i=0; i<n; i++) {
+	        		 for(int j=0; j<n-i-1; j++) {
+	        			 System.out.println(arr[i]);
+	        			 
+	        			 if(arr[j]>arr[j+1]) {
+	        				 int temp = arr[j];
+	        				 arr[j] = arr[j+1];
+	        				 arr[j+1] =temp;
+	        			 }
+	        		 }
+	        		
+	        	 }
+	        	 
+	        	 System.out.println("Element after applying bubble sort");
+	        	 for(int i=0; i<arr.length; i++) {
+	        		 System.out.println(arr[i] + " ");
+	        	 }
+	        	 
+	         }
+	         
+	         public void insertionSort(int arr[]) {
+	        	 for(int i=0; i<arr.length; i++) {
+	        		 int key = arr[i];
+	        		 int j =i-1;
+	        		 
+	        		 while(j>=0 && arr[j]>key) {
+	        			 arr[j+1] =arr[j];
+	        			 j--;
+	        		 }
+	        		 
+	        		 arr[j+1] = key;
+	        	 }
+	        	 
+	        	 System.out.println("Arrays after applying insertions sort : ");
+	        	 for(int i=0; i<arr.length; i++) {
+	        		 System.out.println(arr[i] + " ");
+	        	 }
+	         }
+	         
+	         public void matrixAddition(int m1[][] , int m2[][]) {
+	        	 int row =m1.length;
+	        	 int cols = m1[0].length;
+	        	 
+	        	 int c [][] = new int[row][cols];
+	        	 
+	        	 for(int i=0; i<row; i++) {
+	        		 for(int j=0; j<cols; j++) {
+	        			  c[i][j]= m1[i][j] + m2[i][j]; 
+	        		 }
+	        	 }
+	        	 
+	        	 System.out.println("Result of matrix addition :");
+	        	 for(int i=0; i<row; i++) {
+	        		 for(int j=0; j<cols; j++) {
+	        			 System.out.print(c[i][j] + " ");
+	        		 }
+	        		 System.out.println();
+	        	 }
+	         }
              
              public static void main(String[] args) {
 				QuestionsPractice q = new QuestionsPractice();
@@ -268,6 +331,8 @@ public class QuestionsPractice {
 				for(int i=0; i<arr.length; i++) {
 					arr[i] = sc.nextInt();
 				}
+				
+				
 				
 				
 //				if(n%2==0) {
@@ -349,6 +414,27 @@ public class QuestionsPractice {
 				
 				//Binary search
 				q.binarySearch(arr, target);
+				
+				//Bubble Sort
+				q.bubbleSort(arr);
+				
+				//insertion sort
+				q.insertionSort(arr);
+				
+				int m1[][] = new int[2][2];
+				int m2[][] = new int[2][2];
+				
+				int row =0;
+				int cols = m1[0].length;
+				
+				
+				
+				for(int i=0; i<row; i++) {
+					for(int j=0; j<cols; j++) {
+						
+					}
+				}
+				
 				
 }
 }
