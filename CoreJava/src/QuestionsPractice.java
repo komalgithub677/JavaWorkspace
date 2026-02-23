@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class QuestionsPractice {
 	         public void fact(int n) {
 	        	 int fact =1;
@@ -454,12 +453,6 @@ public class QuestionsPractice {
 				System.out.println("Enter the key to search : ");
 				int key = sc.nextInt();
 				//frequencyCount
-				q.frequency(arr,key);
-				
-				
-				
-				
-}
-
-			 
+				q.frequency(arr,key);				
+                }			 
 }
