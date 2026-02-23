@@ -298,7 +298,31 @@ public class QuestionsPractice {
 	        		 System.out.println();
 	        	 }
 	         }
-             
+	         
+	         public void frequency(int arr[],int key) {
+	        	 int count = 0;
+	        	
+	        	 
+	        	 for(int i=0; i<arr.length; i++) {
+	        		
+	        		 if(arr[i]==key) {
+	        			 count++;
+	        		 }
+	        	 }
+	
+	        	 
+	        	 System.out.println("Count of elements : "+ count);
+	        	 }
+	         
+	         public void sortedArray(int arr[]) {
+	        	 boolean isSorted = false;
+	        	 
+	        	 for(int i=0; i<arr.length; i++) {
+	        		 
+	        	 }
+	        	 
+	         }
+
              public static void main(String[] args) {
 				QuestionsPractice q = new QuestionsPractice();
 				Scanner sc =new Scanner(System.in);
@@ -427,14 +451,15 @@ public class QuestionsPractice {
 				int row =0;
 				int cols = m1[0].length;
 				
+				System.out.println("Enter the key to search : ");
+				int key = sc.nextInt();
+				//frequencyCount
+				q.frequency(arr,key);
 				
 				
-				for(int i=0; i<row; i++) {
-					for(int j=0; j<cols; j++) {
-						
-					}
-				}
 				
 				
 }
+
+			 
 }
