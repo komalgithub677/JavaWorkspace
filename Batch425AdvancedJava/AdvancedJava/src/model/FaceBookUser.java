@@ -6,7 +6,7 @@ public class FaceBookUser {
              private String email;
              private long mobNo;
              
-             public void FaceBookUser(int id ,String name , String email,long mobNo) {
+             public FaceBookUser(int id ,String name , String email,long mobNo) {
             	 this.id =id;
             	 this.name =name;
             	 this.email = email;
