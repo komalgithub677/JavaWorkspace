@@ -2,6 +2,8 @@ package java8features;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamApi {
              public static void main(String[] args) {
@@ -35,6 +37,24 @@ public class StreamApi {
 				List<Integer> list4 = Arrays.asList(5,1,3,2);
 				list4.stream().sorted().forEach(System.out::println);
 				list4.stream().sorted((a,b) -> b-a).forEach(System.out::println);
+				
+				//Second Highest Element
+				List<Integer> list5 = Arrays.asList(10,20,30,40);
+				int second = list.stream()
+						.sorted((a,b) -> b-a)
+						.skip(1)
+						.findFirst()
+						.get();
+				System.out.println(second);
+				
+				//Character frequency
+				String str = "java";
+				Map<Character , Long> map =
+						str.chars()
+						   .mapToObj(c-> (char)c)
+						   .collect(Collectors.groupingBy(c-> c , Collectors.counting()));
+				System.out.println(map);
+				
 				
 				
 				
