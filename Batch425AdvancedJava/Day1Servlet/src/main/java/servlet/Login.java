@@ -26,7 +26,7 @@ public class Login extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/batch_425", "root", "Komal@mysql123");
-			PreparedStatement ps = c.prepareStatement("select * from employee where email= ? and password=?");
+			PreparedStatement ps = c.prepareStatement("select * from employee where empEmail= ? and empPassword=?");
 			ps.setString(1, email);
 			ps.setString(2, pass);
 			ResultSet rs = ps.executeQuery();
@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
 			if (rs.next()) {
 
 				System.out.println(rs.getString(4) + "  " + rs.getString(6));
-				RequestDispatcher rd = request.getRequestDispatcher("profile.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("dashboard.jsp");
 				rd.include(request, response);
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher("register.html");
