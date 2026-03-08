@@ -33,10 +33,19 @@ public class NQTQuestionsPractice {
             	 
              }
              
-             
+             public void factorial() {
+            	 int num =12;
+            	 int fact = 1;
+            	 for(int i=1; i<=num; i++) {
+            		 fact *=i;
+            	 }
+            	 
+            	 System.out.println(fact);
+             }
              public static void main(String[] args) {
             	 NQTQuestionsPractice  n = new NQTQuestionsPractice ();
             	 n.checkEvenOdd();
             	 n.primeNumber();
+            	 n.factorial();
 			}
 }
