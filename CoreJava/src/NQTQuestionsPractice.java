@@ -1,4 +1,3 @@
-
 public class NQTQuestionsPractice {
              public void checkEvenOdd() {
             	 int n =12;
@@ -41,6 +40,15 @@ public class NQTQuestionsPractice {
             	 }
             	 
             	 System.out.println(fact);
+             }
+             
+             public void fibonnacciSeries() {
+            	 int n=10;
+            	 int a = 0 ,b=1;
+            	 for(int i=1; i<n; i++) {
+            		 System.out.println(a + " ");
+            		 
+            	 }
              }
              public static void main(String[] args) {
             	 NQTQuestionsPractice  n = new NQTQuestionsPractice ();

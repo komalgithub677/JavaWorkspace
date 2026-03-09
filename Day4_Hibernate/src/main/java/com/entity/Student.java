@@ -1,5 +1,7 @@
 package com.entity;
 
+import java.util.List;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -66,4 +68,6 @@ public class Student {
     public String toString() {
         return "Student [studeId=" + studeId + ", name=" + name + ", city=" + city + ", laptop=" + laptop + "]";
     }
+
+	
 }

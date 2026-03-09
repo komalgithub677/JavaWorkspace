@@ -21,10 +21,17 @@ jdbc:mysql://localhost:3306/batch_425?useSSL=false&amp;allowPublicKeyRetrieval=t
 <property name="hibernate.connection.password">Komal@mysql123</property>
 
 <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
- <property name="hibernate.show_sql">true</property> 
+
+<property name="hibernate.show_sql">true</property>
 
 <property name="hibernate.hbm2ddl.auto">update</property>
 
+<!-- ADD THESE -->
+
+<!--   <mapping class="com.entity.Department"/> -->
+<!--  <mapping class="com.entity.Employee"/> -->
+<mapping class="com.entity.Student1"/>
+<mapping class="com.entity.Course"/>
 </session-factory>
 
 </hibernate-configuration>
