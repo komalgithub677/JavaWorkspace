@@ -1,60 +1,60 @@
 package com.tka;
 
-@Entity
 public class Employee {
-          int id;
-          String name;
-          String city;
-          Country con;
-          
-		  public Employee(int id, String name, String city, Country con) {
-			super();
-			this.id = id;
-			this.name = name;
-			this.city = city;
-			this.con = con;
-		}
 
-		  public Employee() {
-			
-		  }
+	int id;
+	String name;
+	String city;
 
-		  public int getId() {
-			  return id;
-		  }
+	Country con;
 
-		  public void setId(int id) {
-			  this.id = id;
-		  }
+	public Employee() {
 
-		  public String getName() {
-			  return name;
-		  }
+	}
 
-		  public void setName(String name) {
-			  this.name = name;
-		  }
+	public Employee(int id, String name, String city, Country con) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.con = con;
+	}
 
-		  public String getCity() {
-			  return city;
-		  }
+	public int getId() {
+		return id;
+	}
 
-		  public void setCity(String city) {
-			  this.city = city;
-		  }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-		  public Country getCon() {
-			  return con;
-		  }
+	public String getName() {
+		return name;
+	}
 
-		  public void setCon(Country con) {
-			  this.con = con;
-		  }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-		  @Override
-		  public String toString() {
-			return "Employee [id=" + id + ", name=" + name + ", city=" + city + ", con=" + con + "]";
-		  }
-          
-          
+	public String getCity() {
+		return city;
+	}
+
+	public Country getCon() {
+		return con;
+	}
+
+	public void setCon(Country con) {
+		this.con = con;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", city=" + city + ", con=" + con + "]";
+	}
+
 }

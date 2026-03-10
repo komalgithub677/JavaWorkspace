@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-       http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<beans>
 
-    <!-- Bean Definition -->
-    <bean id="employee" class="com.tka.Employee">
-     <!--    <property name="name" value="Komal"/>--> 
-     <!--     <property name="id" value="21"/>--> 
-      <!--     <property name="city" value="21"/>--> 
-       <!--    <property name="con" ref="c"/>--> 
-                
-<constructor-arg index="0" ,value="123"></constructor-arg>
-<constructor-arg index="3" ,value="c"></constructor-arg>
-    </bean>
-    <bean id="c" class="com.tka.Country">
-  <!--    <property name="name" value="India"/>--> 
-    <!--     <property name="conId" value="23"/>--> 
-    <constructor-arg index="0" ,value="91"></constructor-arg>
-    
-    </bean>
+	<!-- Address Bean -->
+	<bean id="c" class="com.tka.Address">
+		<constructor-arg index="0" value="1"/>
+		<constructor-arg index="1" value="Pune"/>
+		<constructor-arg index="2" value="Maharashtra"/>
+	</bean>
+
+	<!-- Person Bean -->
+	<bean id="per" class="com.tka.Person">
+		<constructor-arg index="0" value="123"/>
+		<constructor-arg index="1" value="Komal"/>
+		<constructor-arg index="2" ref="c"/>
+	</bean>
 
 </beans>
