@@ -33,9 +33,31 @@ public class findGrade{
         }
     }
     
+    public void ticketPricing(){
+        int age =18;
+        
+        if(age<=17){
+            System.out.println("Ticket pricing is 100");
+        }
+        else if(age<=20){
+            System.out.println("Ticket pricing is 200");
+        }
+        else if(age<=50){
+            System.out.println("Ticket pricing 300");
+        }
+        else if(age<=80){
+            System.out.println("Half ticket");
+        }
+        else{
+            System.out.println("Age is not valid");
+        }
+        
+    }
+    
     public static void main(String [] args){
         findGrade f = new findGrade();
         f.grade();
         f.checkLeapYear();
+        f.ticketPricing();
     }
 }
