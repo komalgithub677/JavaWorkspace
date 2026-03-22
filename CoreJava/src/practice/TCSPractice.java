@@ -54,10 +54,27 @@ public class findGrade{
         
     }
     
+    public void salaryBonus(){
+        double salary = 10000;
+        double bonus =0;
+        if(salary<10000){
+            bonus = salary * 0.05;
+        }
+        else if(salary<=50000){
+            bonus = salary * 0.10;
+        }
+        else{
+            bonus = salary * 0.15;
+        }
+        
+        System.out.println("bonus : " + bonus);
+    }
+    
     public static void main(String [] args){
         findGrade f = new findGrade();
         f.grade();
         f.checkLeapYear();
         f.ticketPricing();
+        f.salaryBonus();
     }
 }
