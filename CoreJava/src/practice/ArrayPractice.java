@@ -94,8 +94,30 @@ public class ArrayPractice {
 		
 	}
 //	Count how many times a number appears (frequency)
-	
+	public void count(int arr[] , int key) {
+		int count = 0;
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i]==key) {
+				count++;
+			}
+		}
+		
+		System.out.println("Count of elements : " + count);
+	}
 //	Copy elements of one array into another
+	public void copyElements(int arr[]) {
+		int arr1[] = new int[arr.length];
+		System.out.println("Elements before copying : ");
+		for(int i=0; i<arr.length; i++) {
+			arr1[i] = arr[i];
+			System.out.println(arr[i]);
+		}
+		
+		System.out.println("Elements after copying : ");
+		for(int i=0; i<arr.length; i++) {
+			System.out.println(arr1[i]);
+		}
+	}
 	
 	   
 //	   🟡 Level 2: Basic Logic Building
@@ -172,6 +194,12 @@ public class ArrayPractice {
 			   //linear search
 			   int key =  sc.nextInt();
 			   a.linearSearch(arr, key);
+			   
+			   //count of elements
+			   a.count(arr, key);
+			   
+			   //copy array elements
+			   a.copyElements(arr);
 	   
 				
 			}
