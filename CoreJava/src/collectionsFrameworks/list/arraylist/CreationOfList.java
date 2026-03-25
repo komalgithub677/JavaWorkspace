@@ -73,7 +73,7 @@ public class CreationOfList {
     	  
 //    	  Write a program to reverse a List.
     	 
-    	  System.out.println( list.reversed());
+//    	  System.out.println( list.reversed());
 //
 //    	  Write a program to find second largest element in a List.
     	  int max1 = Integer.MIN_VALUE;

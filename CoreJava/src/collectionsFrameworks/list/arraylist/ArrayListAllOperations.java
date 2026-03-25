@@ -36,11 +36,11 @@ public class ArrayListAllOperations {
 				//last index of list
 				System.out.println(list.lastIndexOf(18));
 				
-				//get first element
-				System.out.println(list.getFirst());
-				
-				//get last element
-				System.out.println(list.getLast());
+//				//get first element
+//				System.out.println(list.getFirst());
+//				
+//				//get last element
+//				System.out.println(list.getLast());
 				
 				//Sort the arrayList
 				Collections.sort(list);

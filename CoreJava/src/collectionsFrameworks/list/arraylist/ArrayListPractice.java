@@ -108,8 +108,8 @@ public class ArrayListPractice {
             	  System.out.println(list);
             	
             	  
-//            	  🔹 Task 12: Reverse the ArrayList
-            	  System.out.println(list.reversed());
+////            	  🔹 Task 12: Reverse the ArrayList
+//            	  System.out.println(list.reversed());
             	  
             	  for(int i=list.size()-1; i>0; i--) {
             		  System.out.println(list);
