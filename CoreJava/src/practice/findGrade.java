@@ -1,3 +1,4 @@
+package practice;
 public class findGrade{
     public void grade(){
         int marks =50;
