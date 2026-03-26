@@ -3,6 +3,7 @@ package practice;
 public class StringPractice {
              public static void main(String[] args) {
 				String s = "Komal";
+				String s1 = "Komal";
 				
 				System.out.println(s.length());
 				System.out.println(s.charAt(0));
@@ -12,5 +13,9 @@ public class StringPractice {
 				System.out.println(s.substring(0 ,2));
 				System.out.println(s.startsWith("k"));
 				System.out.println(s.endsWith("l"));
+				System.out.println(s.equals(s1));
+				System.out.println(s==s1);
+				
+				
 			}
 }
