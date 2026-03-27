@@ -16,6 +16,23 @@ public class StringPractice {
 				System.out.println(s.equals(s1));
 				System.out.println(s==s1);
 				
+				//String builder is used to modify the strings without creating the new objects
+				StringBuilder sb = new StringBuilder("Hello");
+				sb.append("world");
+				
+				System.out.println(sb);
+				sb.insert(1, "Java");
+				System.out.println(sb);
+				
+				System.out.println(sb.capacity());
+				
+				System.out.println(sb.replace(0, 5, "Hi"));
+				
+				System.out.println(sb.replace(0, 5, "Hi"));
+				
+			    System.out.println(	sb.length());
+				
+				
 				
 			}
 }
