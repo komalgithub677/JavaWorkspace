@@ -4,10 +4,22 @@ import java.util.Scanner;
 
 public class ArraysPractice {
 //	Reverse an array
+    
+    
 	public void reverse(int arr[]) {
-		int rev = 0;
-		for(int i=arr.length-1; i>=0; i--) {
-		    System.out.println(arr[i]);
+		int start =0;
+		int end = arr.length-1;
+		
+		System.out.println("Reverse array : ");
+		while(start<=end) {
+			int temp =arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			start++;
+			end--;
+		}
+		for(int num : arr) {
+			System.out.println(num);
 		}
 	}
 //	Find maximum & minimum element
@@ -19,7 +31,7 @@ public class ArraysPractice {
 			if(arr[i]>max) {
 				max = arr[i];
 			}
-			else if(arr[i]<min) {
+			if(arr[i]<min) {
 				min = arr[i];
 			}
 		}
@@ -38,27 +50,32 @@ public class ArraysPractice {
 	}
 //	Count even & odd numbers
 	public void evenOdd(int arr[]) {
+		int even =0 , odd =0;
+		
+		System.out.println("Even odd elements : ");
 		for(int i=0; i<arr.length; i++) {
 			
 			if(arr[i]%2==0) {
-				System.out.println(arr[i]);
+				even++;
 			}
 			else {
-				System.err.println(arr[i]);
+				odd++;
 			}
 		}
+		
+		System.out.println("Even : " + even);
+		System.out.println("Odd : " + odd);
 	}
 //	Linear search (find element)
 	public void linearSearch(int arr[] , int key) {
+		System.out.println("Searching elements in array : ");
 		for(int i=0; i<arr.length; i++) {
 			if(arr[i]==key) {
-				System.out.println(i);
-				break;
-			}
-			else {
-				System.err.println(i);
+				System.out.println("Element found at index : " + i);
+				return;
 			}
 		}
+		System.out.println("Element not found");
 	}
 	
 	public static void main(String[] args) {
@@ -81,11 +98,11 @@ public class ArraysPractice {
 		//evenOdd
 		a.evenOdd(arr);
 		
+		System.out.println("Enter your key : ");
 		int key = sc.nextInt();
 		
 		//linearSearch
 		a.linearSearch(arr, key);
-		
 		
 	}
 }
