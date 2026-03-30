@@ -23,6 +23,21 @@ public class Arrays2ndLevel {
 		}
 	}
 	
+	public void twoSum(int arr[] , int target) {
+		
+		
+		
+		for(int i=0 ;i<arr.length; i++) {
+		   for(int j=i+1; j<arr.length; j++) {
+			   if(target == arr[i] + arr[j]) {
+				   System.out.println("Index : " + i + " " + j);
+			   }
+		   }
+		    
+		}
+	
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
 		Arrays2ndLevel a = new Arrays2ndLevel();
@@ -35,6 +50,12 @@ public class Arrays2ndLevel {
 		
 		//move zeroes to end
 		a.moveZeroes(arr);
+		
+		System.out.println("Enter your target elements :");
+		int target = sc.nextInt();
+		
+		//two sum
+		a.twoSum(arr, target);
 		
 	}
 }
