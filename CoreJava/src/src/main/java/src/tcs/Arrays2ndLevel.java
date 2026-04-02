@@ -1,4 +1,4 @@
-package src.tcs;
+
 
 import java.util.Scanner;
 
@@ -24,9 +24,7 @@ public class Arrays2ndLevel {
 	}
 	
 	public void twoSum(int arr[] , int target) {
-		
-		
-		
+				
 		for(int i=0 ;i<arr.length; i++) {
 		   for(int j=i+1; j<arr.length; j++) {
 			   if(target == arr[i] + arr[j]) {
@@ -36,6 +34,57 @@ public class Arrays2ndLevel {
 		    
 		}
 	
+	}
+	
+	public void secondLargest(int arr[]) {
+		int max1 = Integer.MIN_VALUE;
+		int max2 = Integer.MIN_VALUE;
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			if(arr[i]>max1) {
+				max2 = max1;
+				max1 = arr[i];
+			}
+			else if(arr[i]>max2 && max2<max1) {
+				max2 = arr[i];
+			}
+		}
+		
+		System.out.println("First max : " + max1);
+		System.out.println("Second max : " + max2);
+	}
+	
+	public void sorted(int arr[]) {
+		boolean isSorted = true;
+		
+		for(int i=0; i<arr.length-1; i++) {
+			if(arr[i]>arr[i+1]) {
+				isSorted =true;
+				break;
+			}
+		}
+		
+		if(isSorted) {
+			System.out.println("Array is sorted");
+		}
+		else {
+			System.out.println("Array is not sorted");
+		}
+	}
+	
+	public void misingNumber(int arr[]) {
+		int n =arr.length;
+		
+		int total = n*(n+1)/2;
+		int sum =0;
+		
+		for(int i=0; i<arr.length; i++) {
+			sum +=arr[i];
+		}
+		
+		System.out.println("Missing number : " + (total-sum));
+		
 	}
 	
 	public static void main(String[] args) {
@@ -57,5 +106,13 @@ public class Arrays2ndLevel {
 		//two sum
 		a.twoSum(arr, target);
 		
+		//secondmax
+		a.secondLargest(arr);
+		
+		//sorted array
+		a.sorted(arr);
+		
+		//missing number
+		a.misingNumber(arr);
 	}
 }
