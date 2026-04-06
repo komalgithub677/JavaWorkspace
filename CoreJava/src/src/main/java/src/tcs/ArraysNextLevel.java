@@ -1,9 +1,7 @@
 import java.util.Scanner;
-
 public class ArraysNextLevel {
 //	Find Sum of All Elements
 	public void sum(int arr[]) {
-	
 		int sum =0;
 		for(int i=0; i<arr.length; i++) {
 			sum +=arr[i];
@@ -70,9 +68,12 @@ public class ArraysNextLevel {
 		}
 	}
 //	Leaders in Array
+	
 //	Maximum Difference
 //	Stock Buy & Sell
 //	Subarray with Given Sum
+	
+	
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
