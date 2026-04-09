@@ -8,6 +8,8 @@ public class ArraysNextLevel {
 		}
 		System.out.println("Sum of elements : " + sum);
 	}
+	
+	
 //	Count Positive, Negative, Zero
 	public void pnz(int arr[]) {
 		int zcount=0;
