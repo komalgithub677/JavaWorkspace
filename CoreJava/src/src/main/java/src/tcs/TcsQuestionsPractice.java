@@ -94,6 +94,9 @@ public class TcsQuestionsPractice {
     	}
     }
 //	Find whether a character is vowel or consonant.
+    public void chararacterChecking(char c) {
+    	
+    }
 //	Check if a number is a palindrome (e.g., 121).
 //	🔹 2. LOOPS Questions
 //	Basic (for / while)
