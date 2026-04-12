@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class TcsQuestionsPractice {
 //	1. IF–ELSE Questions
@@ -93,15 +94,53 @@ public class TcsQuestionsPractice {
     		System.out.println("Number is not divisible by 3 and 5");
     	}
     }
+    
 //	Find whether a character is vowel or consonant.
     public void chararacterChecking(char c) {
-    	
+    	if(c=='a' || c=='i' || c=='o' || c=='u' || c=='e') {
+    		System.out.println("vowel");
+    	}
+    	else {
+    		System.out.println("Consonant");
+    	}
     }
 //	Check if a number is a palindrome (e.g., 121).
+    public void palindromeNumber(int num) {
+    	int rev = 0;
+    	int original = num;
+    	
+    	System.out.println("Original number : " + num);
+    	
+    	for(int i=num; i>0; i=i/10) {
+    		int digit = i%10;
+    		rev = rev * 10 + digit;
+    		digit++;
+    	}
+    	
+    	System.out.println("Reverse number : " + rev);
+    	if(original ==rev) {
+    		System.out.println("Number is palindrome");
+    	}
+    	else {
+    		System.out.println("Number is not palindrome");
+    	}
+    }
 //	🔹 2. LOOPS Questions
 //	Basic (for / while)
 //	Print numbers from 1 to 100.
+    public void printinumbers(int num) {
+    	for(int i=0; i<=num; i++) {
+    		System.out.println(i);
+    	}
+    }
 //	Print even numbers from 1 to N.
+    public void evenNumberPrinting(int num) {
+    	for(int i=1; i<=num; i++) {
+    	  if(i%2==0) {
+    		  System.out.println(i);
+    	  }
+    	}
+    }
 //	Find sum of first N natural numbers.
 //	Print multiplication table of a number.
 //	Moderate
@@ -179,6 +218,16 @@ public class TcsQuestionsPractice {
 //	Check if string contains only digits.
 //	Rotate array by K positions.
 public static void main(String[] args) {
+	TcsQuestionsPractice t = new TcsQuestionsPractice();
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+	t.palindromeNumber(num);
+	
+	System.out.println("Printing numbers form the 1 to 100");
+	t.printinumbers(num);
+	
+	System.out.println("Even numbers");
+	t.evenNumberPrinting(num);
 	
 }
 }

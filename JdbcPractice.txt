@@ -1,0 +1,82 @@
+Jdbc is an api which connnects the java Application to the Database . Which includes the driverManager , Connnection, Prepared Statment , Statement , Resultset , Crud operations
+include the create , read,update,delete.
+Steps of Jdbc:
+Step1)Firstly we need to add the jar file(MysqlConnector)
+         1.Maven Repository
+          2.This jar file inlcude the driver class
+Step 2)Register and LoadDriver class
+      Class.forName("com.mysql.cj.jdbc.Driver.Class)
+Step 3)Generate DB Connection through driver manager
+      Connection c = DriverManager.getConnection("DataBase url" , "root" , "Komal@mysql123");
+
+Step 4: Statement and prepared statement 
+ if we use the statement then there would be the static execution of the queries and if we use the prepared statement then there is the dynamic execution of the queries.
+Statement c = c.createStatement();
+Steps 5 :
+Then execute queries.
+Step 6:
+Close all connections 
+
+Modular Approach is used to database connectiivity:
+which includes the ->
+       Dao:database connection code
+       Service:Which includes the bussiness Logic
+       Controller:Calling Functionality
+
+What is and driver ?
+Driver act as the bridge between the java application and the database.
+Where driver is act like as an bridge between the java application to the db that store the data in the database.
+There are the types of driver:
+Type 1 : jdbc odbc bridge driver
+Jdbc:Java databse connectivity(Designed by sun microsystem)
+odbc:open database connectivity(Design by windows microsoft)
+Here odbc is only the windows specific os so the removed support form the java 7 in the previous version it has been used.
+
+Java Application -> jdbc driver -> odbc driver -> native driver -> Database
+Advantages of this:
+Single driver can be used with all databases.
+Disadvantages of the jdbc-odbc Driver:
+measure disadvantages is that the performance degradation Eah database operations require  multiple calls and coversion which degrades the performace.
+
+Type-II - Jdbc native API:
+Here we avoid odbc instead of we use vendor specific driver . In this type finally removed the os dependency .
+But this vendor specific driver has to be installed on all system partially in c & java-- vendor specific.
+e.g:Oracle OCI driver-- but now out dated
+In this driver Jdbc classes invoke function of vendor client library using JNI for each JDBC method call
+
+Java application -> native api driver - > vendor library -> db
+Better performance is obtaining as compared to type-I driver 
+Odbc driver is not required
+
+Disadvantages of native driver:
+i)Native driver Needs to be install on each machines on which application is to execute 
+ii)the vendor library need to be installed.
+
+Type-II : Jdbc network protocol driver
+In this type initially we installed our API on server and that server will transform the api to client machine .
+When someone is connected through the internet a small copy of an api is sending to the respective client machine.
+When someone is connnected to this server through the internet a small copy of API is sending to respective client machine.Basically it indirectly installed that API in your machine thorugh network so it is called network protocol driver.
+Here type2 driver is running on server and wherever you give the request the server it transform that api in you machine and installed it
+Middleware driver :
+ e.g weblogic RMI driver
+
+In this driver the implementation of the classes of jdbc interface which invoke functions of native drivers over the network using the standard network protocols sunch as TCP/IP.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
