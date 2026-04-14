@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class TcsQuestionsPractice {
@@ -434,17 +436,132 @@ public class TcsQuestionsPractice {
 //	Count frequency of each character.
     public void frequency(String s) {
     	int freqCount = 0;
+    	
+    	for(int i=0; i<s.length(); i++) {
+    		char ch = s.charAt(i);
+    		freqCount++;
+    	}
+    	
+    	System.out.println("Frequency count of the elements : " + freqCount);
     }
 //	Find first non-repeating character.
+    public void firstNonRepeatingCharacter(String s) {
+    	   HashMap<Character , Integer> map = new HashMap<>();
+    	   
+    	   //step 1 : Count frequency
+    	   for(char ch : s.toCharArray()) {
+    		   map.put(ch, map.getOrDefault(ch ,0) + 1);
+    	   }
+    	   
+    	   //Step 2 first non-repeating character
+    	   for(char ch : s.toCharArray()) {
+    		   if(map.get(ch) ==1) {
+    			   System.out.println("First non-repeating character : ");
+    			   return;
+    		   }
+    	   }
+    	   
+    	   System.out.println("Non - repeating character not found");
+    }
+   
 //	Check if two strings are anagrams.
+    public void Anagrams(String s1 , String s2) {
+    	//step 1 check lenth
+    	if(s1.length()!= s2.length()) {
+    		System.out.println("Not anagrams");
+    		return;
+    	}
+    	
+    	//convert to char array
+    	char [] a1 = s1.toCharArray();
+    	char [] a2 = s2.toCharArray();
+    	
+    	Arrays.sort(a1);
+    	Arrays.sort(a2);
+    	
+    	if(Arrays.equals(a1, a2)) {
+    		System.out.println("Anagram");
+    	}
+    	else {
+    		System.out.println("Not anagram");
+    	}
+    	
+    }
 //	🔹 5. ARRAYS Questions
 //	Basic
 //	Find sum of elements in an array.
+    public void sum(int arr[]) {
+    	int sum = 0;
+    	for(int i=0; i<arr.length-1; i++) {
+    		sum +=arr[i];
+    	}
+    	
+    	System.out.println("Sum of array elements :" + sum);
+    }
 //	Find maximum and minimum element.
+    public void minimumMaximum(int arr[]) {
+    	int max = Integer.MIN_VALUE;
+    	int min = Integer.MAX_VALUE;
+    	
+    	for(int i=0; i<arr.length-1; i++) {
+    		if(arr[i]>max) {
+    			max = arr[i];
+    		}
+    		
+    		if(arr[i]<min) {
+    			min = arr[i];
+    		}
+    	}
+    	
+    	System.out.println("Minimum element : " + min);
+    	System.out.println("Maximum elemnt : " + max);
+    }
 //	Print array elements in reverse.
+    public void reverse(int arr[]) {
+    	int start = 0;
+    	int end = arr.length-1;
+    	
+    	while(start<=end) {
+    		int temp = arr[start];
+    		arr[start] =arr[end];
+    		arr[end] = temp;
+    		start++;
+    		end--;
+    	}
+    	
+    	for(int i=0; i<arr.length; i++) {
+    		System.out.println(arr[i]);
+    	}
+    }
 //	Moderate
 //	Count even and odd numbers in array.
-//	Search an element (Linear Search).
+    public void evenOdd(int arr[]) {
+    	int even = 0;
+    	int odd =0;
+    	
+    	for(int i=0; i<arr.length; i++) {
+    		if(arr[i] % 2==0) {
+    		 even++;
+    		}
+    		if(arr[i]%2!=0) {
+    			odd++;
+    		}
+    	}
+    	
+    	System.out.println(even);
+    	System.out.println(odd);
+    }
+//	Search an element (Linear Search)
+public void linearSearch(int arr[] , int key) {
+	for(int i=0; i<arr.length; i++) {
+		if(arr[i] == key) {
+			System.out.println("Element found + " + i);
+		}
+		else {
+			System.out.println("Elemtn not found");
+		}
+	}
+}
 //	Sort an array (Bubble Sort).
 //	Tricky
 //	Find second largest element.
