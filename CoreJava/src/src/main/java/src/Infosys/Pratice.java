@@ -9,7 +9,7 @@ public class Pratice {
             	 a = b;
             	 b =temp;
             	 
-            	a==b ? true : false;
+//            	a==b ? true : false;
             	 
             	 System.out.println(a);
             	 System.out.println(b);
