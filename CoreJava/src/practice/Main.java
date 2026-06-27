@@ -19,5 +19,5 @@ class Main {
      System.out.println("Start small. Ship something.");
      add();
      Main m = new Main();
- }
+     }
 }

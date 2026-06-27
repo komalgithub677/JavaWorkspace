@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Vector;
 
 public class P3 {
        public static void main(String[] args) {
@@ -51,9 +52,34 @@ public class P3 {
 		map.put(4, "Shreya");
 		
 		System.out.println(map + " : " );
+		map.remove(1);
+		map.remove(2);
 		
+		System.out.println(map);
 		
+		Vector<Integer> v = new Vector<>();
 		
+		v.add(12);
+		v.add(13);
+		v.add(14);
+		v.add(15);
+		v.add(16);
 		
+		System.out.println(v);
+		
+		v.remove(1);
+		v.remove(2);
+		
+		System.out.println(v);
+		
+		v.addFirst(10);
+		System.out.println(v);
+		
+		v.remove(1);
+		System.out.println(v);
+		
+		v.remove(2);
+		System.out.println(v);
+			
 	}
 }
